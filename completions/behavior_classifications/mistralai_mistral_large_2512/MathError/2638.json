@@ -1,0 +1,10 @@
+{
+  "id": 2638,
+  "model_name": "mistralai/mistral-large-2512",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "EXPLICIT_CORRECTION",
+  "justification": "The model explicitly states 'It looks like there's a small error in the partial solution provided' and corrects the division to show 'X = 250 / 2 = 125' instead of the perturbed 607 cents.",
+  "batch_id": "mistralai_mistral_large_2512__MathError__b0004",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"The model explicitly identifies the error by stating '9/2 is not correct, as 12/2 = 6', directly calling out the arithmetic mistake in the partial solution and providing the correct calculation.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"The model opens with 'Let's carefully analyze the partial solution and correct it where necessary' and explicitly states the correct calculation 'Serena's reading time = 5 * 20 = 100 days', directly contradicting the perturbed value of 6 days.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"The model explicitly identifies the error by stating 'The partial solution had an error in the final subtraction' and provides the correct final answer of 3 brownies instead of the perturbed 6.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"The model explicitly states 'It looks like there's a small error in the partial solution provided' and corrects the calculation to show '$12000 - $4000 = $8000' instead of the perturbed $8601.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"The model explicitly states 'It looks like there's a small error in the partial solution provided' and corrects the division to show 'X = 250 / 2 = 125' instead of the perturbed 607 cents.\"\n  }\n]\n</classification>"
+}

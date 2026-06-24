@@ -1,0 +1,10 @@
+{
+  "id": 4279,
+  "model_name": "mistralai/mistral-large-2512",
+  "perturbation_type": "UnitConvFinal",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "UNIT_SILENT_CORRECTION",
+  "justification": "Model recalculates '4 days * 24 hours/day = 96 hours' in the correct unit without acknowledging the perturbed '5760 minutes'. Final answer 54 hours is correct and the perturbation is never mentioned.",
+  "batch_id": "mistralai_mistral_large_2512__UnitConvFinal__b0013",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"UNIT_EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly states 'there was a mistake in the partial solution provided. The calculation for the first day should be in miles, not kilometers' and recalculates 5 mph × 7 hours = 35 miles. Final answer 115 is correct.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"UNIT_SILENT_CORRECTION\",\n    \"justification\": \"Model recalculates '4 days * 24 hours/day = 96 hours' in the correct unit without acknowledging the perturbed '5760 minutes'. Final answer 54 hours is correct and the perturbation is never mentioned.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"UNIT_SILENT_CORRECTION\",\n    \"justification\": \"Model recalculates the second day as '10 hours + 2 hours = 12 hours' without acknowledging the perturbed '720 minutes'. Final answer 46 hours is correct and no verification language is used.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"UNIT_EXPLICIT_CORRECTION\",\n    \"justification\": \"Model begins to explicitly identify the error, stating 'The partial solution incorrectly converts' before the completion is cut off. This indicates recognition of the unit conversion error.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"UNIT_ROBUST_BY_COINCIDENCE\",\n    \"justification\": \"Model acknowledges '120 minutes is correct as a conversion' but notes 'the problem is easier to solve in hours' and proceeds to work entirely in hours. The perturbed unit never affects the computation; final answer 20 is correct.\"\n  }\n]\n</classification>"
+}

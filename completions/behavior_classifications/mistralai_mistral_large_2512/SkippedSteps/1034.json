@@ -1,0 +1,10 @@
+{
+  "id": 1034,
+  "model_name": "mistralai/mistral-large-2512",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model explicitly reconstructs the missing steps: '8 cups of cream cheese / 2 cups per teaspoon of vanilla = 4 teaspoons of vanilla' and '4 teaspoons of vanilla * 2 eggs per teaspoon = 8 eggs.' Shows complete derivation.",
+  "batch_id": "mistralai_mistral_large_2512__SkippedSteps__b0000",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing step: 'Carmen has $40 - $7 = $33' and then calculates the sum '$60 + $20 + $33 = $113'. The final answer is correct.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing calculation: 'the total number of people Marcy can do makeup for is 12 tubes * 3 people per tube = 36 people.' Shows the arithmetic bridging the gap to the final answer.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs multiple missing steps with 'Let's continue the solution step-by-step' and shows the derivation: 'Leah's age = (30 / 2) = 15 years' and 'Rachel's age = Leah's age + 4 = 15 + 4 = 19.'\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing subtraction step: 'Number of parents who disagree = 800 - 160' and 'Number of parents who disagree = 640'. Shows the arithmetic needed to reach the final answer.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps: '8 cups of cream cheese / 2 cups per teaspoon of vanilla = 4 teaspoons of vanilla' and '4 teaspoons of vanilla * 2 eggs per teaspoon = 8 eggs.' Shows complete derivation.\"\n  }\n]\n</classification>"
+}

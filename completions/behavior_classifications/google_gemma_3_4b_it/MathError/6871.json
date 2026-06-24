@@ -1,0 +1,10 @@
+{
+  "id": 6871,
+  "model_name": "google/gemma-3-4b-it",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "SILENT_CORRECTION",
+  "justification": "The model outputs '#### 84' which is the correct answer (12*7=84), substituting the right value without any mention of the perturbed '9 eggs a week' or any discrepancy in the partial solution.",
+  "batch_id": "google_gemma_3_4b_it__MathError__b0017",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"The model explicitly states 'The calculation in the partial solution is incorrect' and then recalculates to arrive at the correct answer of 15 minutes instead of the perturbed 75 minutes.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"The model first says 'The partial solution is correct' but then catches itself with 'Oops, I made a mistake in the previous calculation. Let's redo it.' It then recalculates to get 1600 liters instead of the perturbed 6556 liters.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"ERROR_IGNORING\",\n    \"justification\": \"The model outputs '#### 56' with no verification or correction language, directly adopting the perturbed final answer of 56 dishes (which flows from the incorrect division 65/5=56 instead of the correct 65/5=13).\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"ERROR_IGNORING\",\n    \"justification\": \"The model outputs '#### 585' with no verification or correction, propagating the perturbed sum of 585 oysters (instead of the correct 600) as the final answer.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The model outputs '#### 84' which is the correct answer (12*7=84), substituting the right value without any mention of the perturbed '9 eggs a week' or any discrepancy in the partial solution.\"\n  }\n]\n</classification>"
+}

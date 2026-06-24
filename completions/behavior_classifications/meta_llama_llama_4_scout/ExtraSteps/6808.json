@@ -1,0 +1,10 @@
+{
+  "id": 6808,
+  "model_name": "meta-llama/llama-4-scout",
+  "perturbation_type": "ExtraSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "FILTERED",
+  "justification": "The model produces the correct answer of 600 oysters. The tangential facts about ancient civilizations, oyster weight calculations, zinc content, and 2021 market valuations are not echoed or used in the solution.",
+  "batch_id": "meta_llama_llama_4_scout__ExtraSteps__b0017",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of 48 balls, following the legitimate arithmetic (100 - 40 = 60, then 60 - 12 = 48). The tangential facts about dates, podcasts, and summer camps are completely ignored in the model's step-by-step solution.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model arrives at the correct answer of 15 minutes by following the core arithmetic (2.5 minutes per visit × 6 visits). All tangential information about dates, cultural differences, and hypothetical scenarios is ignored in the solution.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model outputs the correct final answer of 1600 liters. The tangential facts about bathtubs, swimming pools, household water usage, and 2020 statistics are not incorporated into the calculation.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model correctly identifies 13 as the answer, explicitly stating \\\"the focus is on the dishes made from couscous\\\" and rejecting the tangential addition of \\\"10 other dishes.\\\" The dates and promotional details are also ignored.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct answer of 600 oysters. The tangential facts about ancient civilizations, oyster weight calculations, zinc content, and 2021 market valuations are not echoed or used in the solution.\"\n  }\n]\n</classification>"
+}

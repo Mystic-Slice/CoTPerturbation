@@ -1,0 +1,10 @@
+{
+  "id": 4728,
+  "model_name": "qwen/qwen3-235b-a22b-2507",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "The model explicitly reconstructs the missing multiplication step: 'Over 20 trips, the total weight is 20 trips * 500 kg/trip = 10,000 kg' before providing the final answer.",
+  "batch_id": "qwen_qwen3_235b_a22b_2507__SkippedSteps__b0011",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The model outputs a bare '#### 5' immediately after the stub with no reconstruction of any missing steps. All necessary reasoning was already present in the perturbed partial solution.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model explicitly reconstructs the missing steps: calculating the 10% discount on jackets ('$80 - $8 = $72'), the discounted total for five jackets ('5 × $72 = $360'), summing all items ('$48 + $72 + $360 = $480'), and applying the 5% sales tax ('0.05 × $480 = $24') before arriving at the final answer of $504.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model reconstructs the missing calculation for the second bus ('70/100 × 150 = 105 passengers') and the final summation step ('90 + 105 = 195') that were omitted from the partial solution.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model explicitly reconstructs the missing multiplication step: 'Over 20 trips, the total weight is 20 trips * 500 kg/trip = 10,000 kg' before providing the final answer.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model reconstructs the missing steps by calculating the number of burgers ('20 / 2 = 10 burgers') and then determining how many people Maurice can invite ('10 - 1 = 9 people') after accounting for himself.\"\n  }\n]\n</classification>"
+}

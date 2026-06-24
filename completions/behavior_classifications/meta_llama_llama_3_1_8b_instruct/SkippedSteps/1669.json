@@ -1,0 +1,10 @@
+{
+  "id": 1669,
+  "model_name": "meta-llama/llama-3.1-8b-instruct",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "GUESSED",
+  "justification": "Bare '#### 104' immediately after the stub with no new reasoning or reconstruction. The partial solution already computed the answer, and the model simply outputs it.",
+  "batch_id": "meta_llama_llama_3_1_8b_instruct__SkippedSteps__b0002",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing multiplication step: '20 pounds * $5.50 per pound = $110'. This bridges the gap between the partial solution and the final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Model simply restates the already-computed value ('25 purple four leaf clovers') without reconstructing any missing steps. The completion adds only boilerplate acknowledgment before stating '#### 25'.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps: dividing fence length by tree width ('75 feet / 1.5 feet = 50 trees') and then multiplying by cost per tree ('50 trees * $8.00 = $400.00'). These calculations bridge the gap to the final answer.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 104' immediately after the stub with no new reasoning or reconstruction. The partial solution already computed the answer, and the model simply outputs it.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing 20% increase calculation: '20% of 180 kilograms is 0.20 x 180 = 36 kilograms' and '180 + 36 = 216 kilograms'. These steps bridge the gap between the partial solution and final answer.\"\n  }\n]\n</classification>"
+}

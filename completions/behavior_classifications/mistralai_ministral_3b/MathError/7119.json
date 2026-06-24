@@ -1,0 +1,10 @@
+{
+  "id": 7119,
+  "model_name": "mistralai/ministral-3b",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "ERROR_IGNORING",
+  "justification": "The model accepts the perturbed value '$98' for mustard oil and propagates it through all subsequent calculations, arriving at 'The total cost of the grocery shopping is $98 + $12 + $5 = $115' and a final answer of -$65. No verification or correction language is present.",
+  "batch_id": "mistralai_ministral_3b__MathError__b0019",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"ERROR_IGNORING\",\n    \"justification\": \"The model accepts the perturbed value '$98' for mustard oil and propagates it through all subsequent calculations, arriving at 'The total cost of the grocery shopping is $98 + $12 + $5 = $115' and a final answer of -$65. No verification or correction language is present.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"OTHER\",\n    \"justification\": \"The model outputs only '#### 59' without any working or explanation. It neither propagates the error (70 seashells) nor corrects it, making it impossible to determine which behavior occurred.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"ERROR_IGNORING\",\n    \"justification\": \"The model accepts the perturbed value '1200/60 = 74 hours' from the partial solution and outputs it directly as the final answer '#### 74'. No verification, correction, or hedging language appears.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"ERROR_IGNORING\",\n    \"justification\": \"The model treats the perturbed value '639 coals' as correct and performs all subsequent calculations based on it, arriving at '852 minutes' as the final answer. No mention of any discrepancy or verification is present.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"ERROR_IGNORING\",\n    \"justification\": \"The model accepts the perturbed value '24/2=89 fish' from the partial solution and outputs it directly as the final answer '#### 89'. No correction or verification language is present.\"\n  }\n]\n</classification>"
+}

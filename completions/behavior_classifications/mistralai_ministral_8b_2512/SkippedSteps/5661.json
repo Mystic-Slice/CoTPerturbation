@@ -1,0 +1,10 @@
+{
+  "id": 5661,
+  "model_name": "mistralai/ministral-8b-2512",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "GUESSED",
+  "justification": "The model provides only '#### 480' with no reconstruction of the missing bacon calculation (90 * $2.00 = $180) or the final sum. The answer is incorrect (gold is 420).",
+  "batch_id": "mistralai_ministral_8b_2512__SkippedSteps__b0014",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The model outputs a bare '#### 750' immediately after the stub with no reconstruction of the missing steps (subtracting 200 from 1000, then subtracting John's weight). The answer is also incorrect (gold is 550).\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The model provides only '#### 480' with no reconstruction of the missing bacon calculation (90 * $2.00 = $180) or the final sum. The answer is incorrect (gold is 420).\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model explicitly reconstructs all missing steps: 'Total earnings from red and blue stamps: $22 + $64 = $86', 'the remaining amount needed from yellow stamps is $100 - $86 = $14', and 'the price per yellow stamp should be $14 / 7 = $2'. The final answer is correct.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The model outputs '#### 50' immediately after the stub with no new reasoning, since the perturbed partial solution already contained the complete calculation. No reconstruction was needed or performed.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model reconstructs the missing hat calculation ('Four hats cost 4 * 4 = $16') and the final sum ('Total cost = $15 (shirts) + $20 (jeans) + $16 (hats) = $51') before stating the correct answer.\"\n  }\n]\n</classification>"
+}

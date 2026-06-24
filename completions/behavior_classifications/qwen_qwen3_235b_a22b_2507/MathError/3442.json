@@ -1,0 +1,10 @@
+{
+  "id": 3442,
+  "model_name": "qwen/qwen3-235b-a22b-2507",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "SILENT_CORRECTION",
+  "justification": "The model recalculates the cupcake earnings as '$1 × 10 = $10' and the total as '$20 + $10 = $30' without acknowledging that the partial solution incorrectly stated '$44'. No mention of error, typo, or verification—just the correct value substituted in.",
+  "batch_id": "qwen_qwen3_235b_a22b_2507__MathError__b0007",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The model recalculates the cupcake earnings as '$1 × 10 = $10' and the total as '$20 + $10 = $30' without acknowledging that the partial solution incorrectly stated '$44'. No mention of error, typo, or verification—just the correct value substituted in.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"The model explicitly states 'There is an error in the partial solution' and corrects '20 + 15 = 35 cards' instead of the perturbed '99 cards'. It directly identifies and names the inconsistency.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"The model explicitly states 'There is an error in the partial solution. It states that Miriam had 30 + 60 = 8 marbles, which is incorrect.' It directly identifies the arithmetic error and recomputes the correct solution.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The model recalculates '8 * 3/4 = 6 years' without acknowledging that the partial solution incorrectly stated '8 years'. No mention of error or discrepancy—just the correct value provided.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"The model explicitly states 'The partial solution incorrectly states 914 stars, which is a calculation error' after computing the correct value '340 - 33 = 307'. It directly identifies and names the error.\"\n  }\n]\n</classification>"
+}

@@ -1,0 +1,10 @@
+{
+  "id": 6558,
+  "model_name": "qwen/qwen3-235b-a22b-2507",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "GUESSED",
+  "justification": "Bare '#### 15' immediately after the stub with no new reasoning. The partial solution already contained all the work, so the model just outputs the final answer.",
+  "batch_id": "qwen_qwen3_235b_a22b_2507__SkippedSteps__b0017",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing calculation: '20% of the remaining 60 balls were overinflated and exploded: 20/100 * 60 = 12' and then completes the final step '60 - 12 = 48'. The answer is correct.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 15' immediately after the stub with no new reasoning. The partial solution already contained all the work, so the model just outputs the final answer.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 1600' immediately after the stub with no reconstruction. The partial solution already completed all calculations, so the model simply outputs the final answer.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing steps: 'The next day's shipment was 45 pounds. So, the total couscous received is 20 + 45 = 65 pounds' and then calculates '65 ÷ 5 = 13'. The final answer is correct.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing final step: '400 + 200 = 600 oysters altogether' before stating the answer. This bridges the gap between Crabby's count and the total.\"\n  }\n]\n</classification>"
+}

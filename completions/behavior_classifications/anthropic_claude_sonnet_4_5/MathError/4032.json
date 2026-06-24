@@ -1,0 +1,10 @@
+{
+  "id": 4032,
+  "model_name": "anthropic/claude-sonnet-4.5",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "EXPLICIT_CORRECTION",
+  "justification": "Model explicitly states 'The partial solution shows 40, but that's incorrect. The correct calculation is: 70 - 35 - 14 = 21.' This directly calls out the wrong value and provides the correct one.",
+  "batch_id": "anthropic_claude_sonnet_4_5__MathError__b0008",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly states 'Note: The partial solution incorrectly calculated 20/2 = 14. The correct calculation should be 20/2 = 10 minutes for the second snail.' This directly names the arithmetic error and provides the correct value.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model states 'The partial solution has an error in the final calculation. Roger had 14 - 12 = 2 more pieces of candy, not 5.' This explicitly identifies the incorrect value (5) and provides the correct answer (2).\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly states 'The partial solution shows 40, but that's incorrect. The correct calculation is: 70 - 35 - 14 = 21.' This directly calls out the wrong value and provides the correct one.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model states 'The partial solution has an error in the final calculation. It states 27 hours, but $550 ÷ $10 = 55 hours.' This explicitly identifies the incorrect value (27) and provides the correct calculation.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model states 'The partial solution says 24/4 = 7, but that's incorrect arithmetic. 24/4 = 6.' and then further corrects the conceptual error, explicitly calling out the wrong arithmetic in the partial solution.\"\n  }\n]\n</classification>"
+}

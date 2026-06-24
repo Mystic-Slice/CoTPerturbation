@@ -1,0 +1,10 @@
+{
+  "id": 2994,
+  "model_name": "anthropic/claude-haiku-4.5",
+  "perturbation_type": "UnitConvFinal",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "UNIT_EXPLICIT_CORRECTION",
+  "justification": "Model explicitly states '15 minutes/shampoo × 3 shampoos = 45 minutes (not 2700 seconds)' and 'The partial solution has an error.' Final answer 55 minutes is correct.",
+  "batch_id": "anthropic_claude_haiku_4_5__UnitConvFinal__b0007",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"UNIT_EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly states '(note: the partial solution said 1800 minutes, which equals 30 hours)' and recalculates in the correct unit (hours). Final answer 50 hours is correct.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"UNIT_EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly notes '(note: the partial solution incorrectly stated 5100 cents, which is $51.00)' and corrects the unit error. Final answer $226 is correct.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"UNIT_EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly states '15 minutes/shampoo × 3 shampoos = 45 minutes (not 2700 seconds)' and 'The partial solution has an error.' Final answer 55 minutes is correct.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"UNIT_EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly notes '(note: the partial solution shows 60000 cents, which equals $600)' and converts to the correct unit. Final answer $150 is correct.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"UNIT_EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly states 'The partial solution incorrectly converted hours to minutes' and recalculates correctly in hours. Final answer $28,000 is correct.\"\n  }\n]\n</classification>"
+}

@@ -1,0 +1,10 @@
+{
+  "id": 6175,
+  "model_name": "mistralai/ministral-3b",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "GUESSED",
+  "justification": "Bare '#### 102' with no reconstruction. The model does not show the missing steps of adding the two totals (104+80=184) and dividing by 2 to get the average (92).",
+  "batch_id": "mistralai_ministral_3b__SkippedSteps__b0016",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 40' immediately after the stub with no reconstruction of the missing steps. The model does not show the calculation for 'tomorrow' (35+5=40) or 'day after tomorrow' (40+5=45).\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 102' with no reconstruction. The model does not show the missing steps of adding the two totals (104+80=184) and dividing by 2 to get the average (92).\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 50' with no reconstruction. The model does not show the missing calculation of 45/90 = 0.5 = 50% to find the percentage chance of picking pepperjack.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 21' with no reconstruction. The model does not show the missing steps of combining like terms (4j = 64) and solving for j (j = 16).\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps: 'In the afternoon, she received 12 more marbles...32 + 12 = 44 marbles. Susie gave back...2 * 5 = 10 marbles...44 + 10 = 54 marbles.' Shows all intermediate arithmetic before the final answer.\"\n  }\n]\n</classification>"
+}

@@ -1,0 +1,10 @@
+{
+  "id": 1656,
+  "model_name": "qwen/qwen3-235b-a22b-2507",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "ERROR_IGNORING",
+  "justification": "The model accepts the perturbed value '30 feet long' as truth and propagates it through subsequent calculations (30 ÷ 1.5 = 20 trees, 20 × 8 = $160), yielding a final answer consistent with the planted error.",
+  "batch_id": "qwen_qwen3_235b_a22b_2507__MathError__b0002",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The model recomputes '20 * 5.50 = $110' without acknowledging that the partial solution stated '$655'. No mention of error, typo, or verification—just the correct calculation and final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"The model explicitly states 'since 20% of 500 is 100, not 360 as incorrectly stated in the partial solution', directly naming the error and providing the correct value before computing the final answer.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"ERROR_IGNORING\",\n    \"justification\": \"The model accepts the perturbed value '30 feet long' as truth and propagates it through subsequent calculations (30 ÷ 1.5 = 20 trees, 20 × 8 = $160), yielding a final answer consistent with the planted error.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"OTHER\",\n    \"justification\": \"The model outputs only '#### 104' with no explanation or calculation shown. This provides neither propagation of the error (101) nor correction, making it impossible to classify under the standard labels.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"The model opens with 'There is an error in the partial solution. The calculation for the increase is incorrect,' explicitly naming the mistake and then recomputing the correct increase (36 instead of 81) before arriving at the correct final answer.\"\n  }\n]\n</classification>"
+}

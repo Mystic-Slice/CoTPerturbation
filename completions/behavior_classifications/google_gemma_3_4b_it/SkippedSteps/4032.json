@@ -1,0 +1,10 @@
+{
+  "id": 4032,
+  "model_name": "google/gemma-3-4b-it",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model reconstructs the missing steps by calculating Canada's scientists ('70 * (1/5) = 14 people'), summing Europe and Canada ('35 + 14 = 49'), and finding USA scientists ('70 - 49 = 21').",
+  "batch_id": "google_gemma_3_4b_it__SkippedSteps__b0008",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing subtraction step: 'Luke has already made 33 stars, so he needs to make 340 - 33 = 307 more stars.' This bridges the gap between the total needed and the final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing calculation for the third snail: 'The third snail traveled at five times the rate of the second snail. Since the second snail took 10 minutes, the third snail would take 10/5 = 2 minutes.' This completes the reasoning chain.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs Roger's total candy count ('Roger had 11 + 3 = 14 pieces') and the comparison step ('Roger had 14 - 12 = 2 more pieces') that were missing from the partial solution.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing steps by calculating Canada's scientists ('70 * (1/5) = 14 people'), summing Europe and Canada ('35 + 14 = 49'), and finding USA scientists ('70 - 49 = 21').\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing steps by calculating total earnings ('$200 + $350 = $550') and then dividing by hourly rate ('Total hours spent on tutoring = $\\\\frac{550}{10} = 55$ hours').\"\n  }\n]\n</classification>"
+}

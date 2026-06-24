@@ -1,0 +1,10 @@
+{
+  "id": 576,
+  "model_name": "qwen/qwen3-235b-a22b-2507",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "GUESSED",
+  "justification": "Bare '#### 50' immediately after the stub with no new reasoning. The perturbed solution already contained the complete calculation, so the model just outputs the answer.",
+  "batch_id": "qwen_qwen3_235b_a22b_2507__SkippedSteps__b0014",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps: 'So the maximum safe weight is 1000 - 200 = 800 pounds' and 'the weight he can put on the bar is 800 - 250 = 550 pounds.' These calculations bridge the gap between the stub and the final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing bacon calculation ('The bacon was $2.00 per slice and they sold 90 slices for a total of 2*90 = $180.00') and the final sum ('Adding the revenue from pancakes and bacon: $240.00 + $180.00 = $420.00').\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs all missing steps: calculating the total earned so far ($86), the remaining amount needed ($14), and dividing by the number of yellow stamps to get the price per stamp ($2).\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 50' immediately after the stub with no new reasoning. The perturbed solution already contained the complete calculation, so the model just outputs the answer.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing hat calculation ('Four hats cost 4 * 4 = $16') and the final sum ('Adding all the costs: 15 (shirts) + 20 (jeans) + 16 (hats) = $51').\"\n  }\n]\n</classification>"
+}

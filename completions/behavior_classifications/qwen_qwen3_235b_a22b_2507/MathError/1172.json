@@ -1,0 +1,10 @@
+{
+  "id": 1172,
+  "model_name": "qwen/qwen3-235b-a22b-2507",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "EXPLICIT_CORRECTION",
+  "justification": "Model states 'The partial solution contains an error' and recalculates the correct value as 50 planks (not 9), then completes the solution correctly.",
+  "batch_id": "qwen_qwen3_235b_a22b_2507__MathError__b0001",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"Model recomputes '32 − 4 = 28 candy bars' without acknowledging that the partial solution incorrectly stated 47. No mention of error, typo, or verification—just the correct value substituted in.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly states 'There is an error in the partial solution' and recalculates the correct value as 1,400,000 instead of the perturbed 5,793,030, then proceeds to the correct final answer.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly identifies 'There is an error in the last step' and states 'The calculation 10 * 0.8 is incorrect as written — it should be 10 * 0.8 = 8, not 1,' then provides the correct final answer.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model states 'The partial solution contains an error' and recalculates the correct value as 50 planks (not 9), then completes the solution correctly.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"Model writes '40 * 0.8 = 32 who have puppies' without acknowledging the partial solution's incorrect value of 39. No error mention, no hedging—just the correct number substituted in.\"\n  }\n]\n</classification>"
+}

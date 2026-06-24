@@ -1,0 +1,10 @@
+{
+  "id": 5863,
+  "model_name": "deepseek/deepseek-v3.2",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "The model explicitly reconstructs the calculation steps: 'The cooked spinach volume is 40 × 0.20 = 8 ounces' and 'Adding the cream cheese and eggs: 8 + 6 + 4 = 18 ounces.' These steps bridge the gap between the stub and the final answer.",
+  "batch_id": "deepseek_deepseek_v3_2__SkippedSteps__b0015",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model explicitly reconstructs the calculation steps: 'The cooked spinach volume is 40 × 0.20 = 8 ounces' and 'Adding the cream cheese and eggs: 8 + 6 + 4 = 18 ounces.' These steps bridge the gap between the stub and the final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model reconstructs the missing steps by calculating Grandpa's gift ('Grandpa: twice Uncle's gift → 2 × 5 = 10 cars'), summing all gifts ('Total new gifts = 10 + 15 + 6 + 5 + 10 = 46 cars'), and adding to the initial collection ('Total after gifts = 150 + 46 = 196').\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model reconstructs the missing calculations: 'The international call cost is 25 cents/minute for 31 minutes: 25 × 31 = 775 cents,' then adds the costs ('Total cost in cents: 225 + 775 = 1000 cents') and converts to dollars.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The model simply restates 'Tony can squat 900 pounds' with no new derivation or reconstruction of the missing steps. The answer follows the stub with only boilerplate rephrasing.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model reconstructs the missing division step: 'Each chair cost 22/2 = 11 dollars.' This calculation bridges the gap between the $22 spent on chairs and the final per-chair cost.\"\n  }\n]\n</classification>"
+}

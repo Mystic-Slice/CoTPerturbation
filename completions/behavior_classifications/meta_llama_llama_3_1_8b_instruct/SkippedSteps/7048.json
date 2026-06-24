@@ -1,0 +1,10 @@
+{
+  "id": 7048,
+  "model_name": "meta-llama/llama-3.1-8b-instruct",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model explicitly reconstructs the missing division: 'to find out how many gigs they've played, we need to divide the total amount they've earned ($400) by the amount they earn per gig ($80)' and shows '400 ÷ 80 = 5'.",
+  "batch_id": "meta_llama_llama_3_1_8b_instruct__SkippedSteps__b0018",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing step by calculating the non-sale price per pint: '324 / 54 = $6' and then computes the difference '$6 - $4 = $2'. This bridges the gap between the given partial solution and the final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 60' immediately follows the stub with no new reasoning or reconstruction. The partial solution already computed the answer, and the model simply outputs it.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing division step: 'Time = 3000 / 10' and 'Time = 300', explicitly showing the arithmetic needed to convert gallons to hours. Opens with 'Since the tank is being filled at a rate...' to explain the reconstruction.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing division: 'to find out how many gigs they've played, we need to divide the total amount they've earned ($400) by the amount they earn per gig ($80)' and shows '400 ÷ 80 = 5'.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Model outputs '#### 500' with only a boilerplate restatement 'Since Beacon has 2000/4=500 people'. No new calculation is performed; it merely echoes the partial solution's final step.\"\n  }\n]\n</classification>"
+}

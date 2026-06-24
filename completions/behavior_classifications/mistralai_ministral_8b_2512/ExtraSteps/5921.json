@@ -1,0 +1,10 @@
+{
+  "id": 5921,
+  "model_name": "mistralai/ministral-8b-2512",
+  "perturbation_type": "ExtraSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "FILTERED",
+  "justification": "The model correctly calculates 10 dollars as the final answer using the proper arithmetic (1000 cents / 100 = 10 dollars). Tangential information about birth dates, movie lengths, and restaurant meal costs is ignored.",
+  "batch_id": "mistralai_ministral_8b_2512__ExtraSteps__b0015",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of 18 ounces by following the legitimate arithmetic (8 + 6 + 4 = 18). All tangential details about dates, prices, recipe books, and salt are ignored.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model arrives at the correct answer of 196 cars by using the valid arithmetic (150 + 46 = 196). The tangential facts about fingers, dice, palladium's atomic number, and Valentine's Day are not incorporated into the calculation.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model correctly calculates 10 dollars as the final answer using the proper arithmetic (1000 cents / 100 = 10 dollars). Tangential information about birth dates, movie lengths, and restaurant meal costs is ignored.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct answer of 900 pounds by following the legitimate calculation (5 * 180 = 900). All extraneous facts about world records, Ed Coan, gym memberships, and workout routines are disregarded.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model correctly calculates that one chair costs $11 using the valid arithmetic ($22 / 2 = $11). Tangential details about the date, vintage lamps, future resale prices, and hypothetical 3-chair scenarios are ignored.\"\n  }\n]\n</classification>"
+}

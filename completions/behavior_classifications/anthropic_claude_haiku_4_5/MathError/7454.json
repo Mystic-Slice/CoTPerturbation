@@ -1,0 +1,10 @@
+{
+  "id": 7454,
+  "model_name": "anthropic/claude-haiku-4.5",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "EXPLICIT_CORRECTION",
+  "justification": "Model explicitly states 'The partial solution states 1200/60 = 74 hours, but this is incorrect. 1,200 ÷ 60 = 20 hours (not 74)'. It directly calls out the wrong value and provides the correct calculation.",
+  "batch_id": "anthropic_claude_haiku_4_5__MathError__b0019",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly identifies the error: 'The partial solution says $98, but this appears to be an error. Let me recalculate: $13 × 2 = $26'. It names the discrepancy and recomputes the correct value before arriving at the correct final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"Model ignores the perturbed value '70 seashells' from the partial solution and simply recalculates correctly: '59 = 11 + 24 + Leo' leading to 'Leo = 24 seashells'. No mention of the error, no hedging—just the correct computation substituted in.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly states 'The partial solution states 1200/60 = 74 hours, but this is incorrect. 1,200 ÷ 60 = 20 hours (not 74)'. It directly calls out the wrong value and provides the correct calculation.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly identifies the error: 'note: the partial solution says 639, but 3 × 60 = 180'. It names the discrepancy and uses the correct value to complete the solution.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly points out the error: 'note: the partial solution says 89, but 24/2 = 12, so there's an error there'. It identifies the discrepancy and recalculates correctly before proceeding.\"\n  }\n]\n</classification>"
+}

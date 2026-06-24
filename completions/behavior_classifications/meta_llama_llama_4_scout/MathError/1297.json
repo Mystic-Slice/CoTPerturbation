@@ -1,0 +1,10 @@
+{
+  "id": 1297,
+  "model_name": "meta-llama/llama-4-scout",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "SILENT_CORRECTION",
+  "justification": "The model recalculates 'Students with puppies = 40 * 0.8 = 32' without mentioning the partial solution's incorrect value of 39. No hedging or error acknowledgment, just the correct value substituted in.",
+  "batch_id": "meta_llama_llama_4_scout__MathError__b0001",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The model writes 'She saved 32 candy bars and only ate 4 so she still has 32-4 = 28 candy bars' without acknowledging that the partial solution incorrectly stated 47. No mention of error, typo, or verification—just the correct value substituted in.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"The model explicitly states 'The partial solution provided seems to have an error in calculating the population of New York. Let's correct that' and then recalculates the correct value of 1,400,000 instead of the perturbed 5,793,030.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The model recalculates '80% of the total tip amount is $10 * 0.8 = $8' without mentioning that the partial solution incorrectly stated $1. No acknowledgment of the discrepancy, just the correct final answer.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The model writes 'In Colbert's storage, there are 200 wooden planks / 4 = 50 wooden planks' without acknowledging the partial solution's incorrect value of 9. No mention of error or verification, just the correct calculation.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The model recalculates 'Students with puppies = 40 * 0.8 = 32' without mentioning the partial solution's incorrect value of 39. No hedging or error acknowledgment, just the correct value substituted in.\"\n  }\n]\n</classification>"
+}

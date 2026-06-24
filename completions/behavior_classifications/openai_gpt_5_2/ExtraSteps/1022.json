@@ -1,0 +1,10 @@
+{
+  "id": 1022,
+  "model_name": "openai/gpt-5.2",
+  "perturbation_type": "ExtraSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "FILTERED",
+  "justification": "The model correctly computes Rachel's age as 19 using the legitimate arithmetic: (34 - 4) ÷ 2 = 15 for Leah, then 15 + 4 = 19 for Rachel. The tangential facts about birth years, 2010, 2025, and favorite numbers are not echoed.",
+  "batch_id": "openai_gpt_5_2__ExtraSteps__b0000",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer 113, following the legitimate arithmetic (Jethro has $20, Carmen has $33, Patricia has $60). The tangential facts about birthdays, ages, and grocery spending are completely ignored.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model arrives at the correct answer 36 by computing 6 tubs × 2 tubes/tub = 12 tubes, then 12 tubes × 3 people/tube = 36 people. All tangential information about wedding guests, makeup time, and summer dates is ignored.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model correctly computes Rachel's age as 19 using the legitimate arithmetic: (34 - 4) ÷ 2 = 15 for Leah, then 15 + 4 = 19 for Rachel. The tangential facts about birth years, 2010, 2025, and favorite numbers are not echoed.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct answer 640 by computing 800 - 160 = 640. The tangential information about cherry blossoms, previous years' surveys (2020, 2019), and different parent counts is completely ignored.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model correctly calculates 8 eggs using the chain: 2 cups sugar → 8 cups cream cheese → 4 tsp vanilla → 8 eggs. All tangential facts about ounces, cream cheese prices, vanilla history, and party serving sizes are ignored.\"\n  }\n]\n</classification>"
+}

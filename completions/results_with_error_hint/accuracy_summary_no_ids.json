@@ -1,0 +1,548 @@
+{
+    "anthropic_claude_haiku_4_5": {
+        "ExtraSteps": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.98,
+            "clean_corr_perturbed_corr": 97,
+            "clean_corr_perturbed_incorr": 1,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 1
+        },
+        "MathError": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.97,
+            "clean_corr_perturbed_corr": 97,
+            "clean_corr_perturbed_incorr": 1,
+            "clean_incorr_perturbed_corr": 0,
+            "clean_incorr_perturbed_incorr": 2
+        },
+        "SkippedSteps": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.98,
+            "clean_corr_perturbed_corr": 97,
+            "clean_corr_perturbed_incorr": 1,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 1
+        },
+        "Sycophancy": {
+            "clean_accuracy": 0.99,
+            "perturbed_accuracy": 0.98,
+            "clean_corr_perturbed_corr": 98,
+            "clean_corr_perturbed_incorr": 1,
+            "clean_incorr_perturbed_corr": 0,
+            "clean_incorr_perturbed_incorr": 1
+        },
+        "UnitConvFinal": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.96,
+            "clean_corr_perturbed_corr": 96,
+            "clean_corr_perturbed_incorr": 2,
+            "clean_incorr_perturbed_corr": 0,
+            "clean_incorr_perturbed_incorr": 2
+        }
+    },
+    "anthropic_claude_sonnet_4_5": {
+        "ExtraSteps": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.98,
+            "clean_corr_perturbed_corr": 97,
+            "clean_corr_perturbed_incorr": 1,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 1
+        },
+        "MathError": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.98,
+            "clean_corr_perturbed_corr": 98,
+            "clean_corr_perturbed_incorr": 0,
+            "clean_incorr_perturbed_corr": 0,
+            "clean_incorr_perturbed_incorr": 2
+        },
+        "SkippedSteps": {
+            "clean_accuracy": 0.97,
+            "perturbed_accuracy": 0.99,
+            "clean_corr_perturbed_corr": 97,
+            "clean_corr_perturbed_incorr": 0,
+            "clean_incorr_perturbed_corr": 2,
+            "clean_incorr_perturbed_incorr": 1
+        },
+        "Sycophancy": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.99,
+            "clean_corr_perturbed_corr": 98,
+            "clean_corr_perturbed_incorr": 0,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 1
+        },
+        "UnitConvFinal": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.98,
+            "clean_corr_perturbed_corr": 97,
+            "clean_corr_perturbed_incorr": 1,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 1
+        }
+    },
+    "deepseek_deepseek_v3_2": {
+        "ExtraSteps": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.99,
+            "clean_corr_perturbed_corr": 98,
+            "clean_corr_perturbed_incorr": 0,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 1
+        },
+        "MathError": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.97,
+            "clean_corr_perturbed_corr": 96,
+            "clean_corr_perturbed_incorr": 2,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 1
+        },
+        "SkippedSteps": {
+            "clean_accuracy": 0.97,
+            "perturbed_accuracy": 0.97,
+            "clean_corr_perturbed_corr": 97,
+            "clean_corr_perturbed_incorr": 0,
+            "clean_incorr_perturbed_corr": 0,
+            "clean_incorr_perturbed_incorr": 3
+        },
+        "Sycophancy": {
+            "clean_accuracy": 0.96,
+            "perturbed_accuracy": 0.99,
+            "clean_corr_perturbed_corr": 96,
+            "clean_corr_perturbed_incorr": 0,
+            "clean_incorr_perturbed_corr": 3,
+            "clean_incorr_perturbed_incorr": 1
+        },
+        "UnitConvFinal": {
+            "clean_accuracy": 0.97,
+            "perturbed_accuracy": 0.94,
+            "clean_corr_perturbed_corr": 93,
+            "clean_corr_perturbed_incorr": 4,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 2
+        }
+    },
+    "google_gemini_3_flash_preview": {
+        "ExtraSteps": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.98,
+            "clean_corr_perturbed_corr": 98,
+            "clean_corr_perturbed_incorr": 0,
+            "clean_incorr_perturbed_corr": 0,
+            "clean_incorr_perturbed_incorr": 2
+        },
+        "MathError": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.98,
+            "clean_corr_perturbed_corr": 98,
+            "clean_corr_perturbed_incorr": 0,
+            "clean_incorr_perturbed_corr": 0,
+            "clean_incorr_perturbed_incorr": 2
+        },
+        "SkippedSteps": {
+            "clean_accuracy": 0.97,
+            "perturbed_accuracy": 0.98,
+            "clean_corr_perturbed_corr": 97,
+            "clean_corr_perturbed_incorr": 0,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 2
+        },
+        "Sycophancy": {
+            "clean_accuracy": 0.97,
+            "perturbed_accuracy": 0.97,
+            "clean_corr_perturbed_corr": 97,
+            "clean_corr_perturbed_incorr": 0,
+            "clean_incorr_perturbed_corr": 0,
+            "clean_incorr_perturbed_incorr": 3
+        },
+        "UnitConvFinal": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.95,
+            "clean_corr_perturbed_corr": 94,
+            "clean_corr_perturbed_incorr": 4,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 1
+        }
+    },
+    "google_gemma_3_4b_it": {
+        "ExtraSteps": {
+            "clean_accuracy": 0.88,
+            "perturbed_accuracy": 0.9,
+            "clean_corr_perturbed_corr": 80,
+            "clean_corr_perturbed_incorr": 8,
+            "clean_incorr_perturbed_corr": 10,
+            "clean_incorr_perturbed_incorr": 2
+        },
+        "MathError": {
+            "clean_accuracy": 0.91,
+            "perturbed_accuracy": 0.6,
+            "clean_corr_perturbed_corr": 55,
+            "clean_corr_perturbed_incorr": 36,
+            "clean_incorr_perturbed_corr": 5,
+            "clean_incorr_perturbed_incorr": 4
+        },
+        "SkippedSteps": {
+            "clean_accuracy": 0.84,
+            "perturbed_accuracy": 0.87,
+            "clean_corr_perturbed_corr": 79,
+            "clean_corr_perturbed_incorr": 5,
+            "clean_incorr_perturbed_corr": 8,
+            "clean_incorr_perturbed_incorr": 8
+        },
+        "Sycophancy": {
+            "clean_accuracy": 0.81,
+            "perturbed_accuracy": 0.84,
+            "clean_corr_perturbed_corr": 70,
+            "clean_corr_perturbed_incorr": 11,
+            "clean_incorr_perturbed_corr": 14,
+            "clean_incorr_perturbed_incorr": 5
+        },
+        "UnitConvFinal": {
+            "clean_accuracy": 0.86,
+            "perturbed_accuracy": 0.76,
+            "clean_corr_perturbed_corr": 69,
+            "clean_corr_perturbed_incorr": 17,
+            "clean_incorr_perturbed_corr": 7,
+            "clean_incorr_perturbed_incorr": 7
+        }
+    },
+    "meta_llama_llama_3_1_8b_instruct": {
+        "ExtraSteps": {
+            "clean_accuracy": 0.74,
+            "perturbed_accuracy": 0.86,
+            "clean_corr_perturbed_corr": 64,
+            "clean_corr_perturbed_incorr": 10,
+            "clean_incorr_perturbed_corr": 22,
+            "clean_incorr_perturbed_incorr": 4
+        },
+        "MathError": {
+            "clean_accuracy": 0.95,
+            "perturbed_accuracy": 0.65,
+            "clean_corr_perturbed_corr": 62,
+            "clean_corr_perturbed_incorr": 33,
+            "clean_incorr_perturbed_corr": 3,
+            "clean_incorr_perturbed_incorr": 2
+        },
+        "SkippedSteps": {
+            "clean_accuracy": 0.9,
+            "perturbed_accuracy": 0.92,
+            "clean_corr_perturbed_corr": 86,
+            "clean_corr_perturbed_incorr": 4,
+            "clean_incorr_perturbed_corr": 6,
+            "clean_incorr_perturbed_incorr": 4
+        },
+        "Sycophancy": {
+            "clean_accuracy": 0.82,
+            "perturbed_accuracy": 0.86,
+            "clean_corr_perturbed_corr": 74,
+            "clean_corr_perturbed_incorr": 8,
+            "clean_incorr_perturbed_corr": 12,
+            "clean_incorr_perturbed_incorr": 6
+        },
+        "UnitConvFinal": {
+            "clean_accuracy": 0.87,
+            "perturbed_accuracy": 0.8,
+            "clean_corr_perturbed_corr": 72,
+            "clean_corr_perturbed_incorr": 15,
+            "clean_incorr_perturbed_corr": 8,
+            "clean_incorr_perturbed_incorr": 5
+        }
+    },
+    "meta_llama_llama_4_scout": {
+        "ExtraSteps": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.96,
+            "clean_corr_perturbed_corr": 94,
+            "clean_corr_perturbed_incorr": 4,
+            "clean_incorr_perturbed_corr": 2,
+            "clean_incorr_perturbed_incorr": 0
+        },
+        "MathError": {
+            "clean_accuracy": 0.99,
+            "perturbed_accuracy": 0.98,
+            "clean_corr_perturbed_corr": 97,
+            "clean_corr_perturbed_incorr": 2,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 0
+        },
+        "SkippedSteps": {
+            "clean_accuracy": 0.99,
+            "perturbed_accuracy": 0.99,
+            "clean_corr_perturbed_corr": 98,
+            "clean_corr_perturbed_incorr": 1,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 0
+        },
+        "Sycophancy": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 1.0,
+            "clean_corr_perturbed_corr": 98,
+            "clean_corr_perturbed_incorr": 0,
+            "clean_incorr_perturbed_corr": 2,
+            "clean_incorr_perturbed_incorr": 0
+        },
+        "UnitConvFinal": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.95,
+            "clean_corr_perturbed_corr": 93,
+            "clean_corr_perturbed_incorr": 5,
+            "clean_incorr_perturbed_corr": 2,
+            "clean_incorr_perturbed_incorr": 0
+        }
+    },
+    "mistralai_ministral_3b": {
+        "ExtraSteps": {
+            "clean_accuracy": 0.91,
+            "perturbed_accuracy": 0.76,
+            "clean_corr_perturbed_corr": 69,
+            "clean_corr_perturbed_incorr": 22,
+            "clean_incorr_perturbed_corr": 7,
+            "clean_incorr_perturbed_incorr": 2
+        },
+        "MathError": {
+            "clean_accuracy": 0.91,
+            "perturbed_accuracy": 0.72,
+            "clean_corr_perturbed_corr": 66,
+            "clean_corr_perturbed_incorr": 25,
+            "clean_incorr_perturbed_corr": 6,
+            "clean_incorr_perturbed_incorr": 3
+        },
+        "SkippedSteps": {
+            "clean_accuracy": 0.92,
+            "perturbed_accuracy": 0.78,
+            "clean_corr_perturbed_corr": 77,
+            "clean_corr_perturbed_incorr": 15,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 7
+        },
+        "Sycophancy": {
+            "clean_accuracy": 0.85,
+            "perturbed_accuracy": 0.83,
+            "clean_corr_perturbed_corr": 74,
+            "clean_corr_perturbed_incorr": 11,
+            "clean_incorr_perturbed_corr": 9,
+            "clean_incorr_perturbed_incorr": 6
+        },
+        "UnitConvFinal": {
+            "clean_accuracy": 0.91,
+            "perturbed_accuracy": 0.9,
+            "clean_corr_perturbed_corr": 85,
+            "clean_corr_perturbed_incorr": 6,
+            "clean_incorr_perturbed_corr": 5,
+            "clean_incorr_perturbed_incorr": 4
+        }
+    },
+    "mistralai_ministral_8b_2512": {
+        "ExtraSteps": {
+            "clean_accuracy": 0.96,
+            "perturbed_accuracy": 0.99,
+            "clean_corr_perturbed_corr": 95,
+            "clean_corr_perturbed_incorr": 1,
+            "clean_incorr_perturbed_corr": 4,
+            "clean_incorr_perturbed_incorr": 0
+        },
+        "MathError": {
+            "clean_accuracy": 0.97,
+            "perturbed_accuracy": 0.8,
+            "clean_corr_perturbed_corr": 78,
+            "clean_corr_perturbed_incorr": 19,
+            "clean_incorr_perturbed_corr": 2,
+            "clean_incorr_perturbed_incorr": 1
+        },
+        "SkippedSteps": {
+            "clean_accuracy": 0.96,
+            "perturbed_accuracy": 0.79,
+            "clean_corr_perturbed_corr": 77,
+            "clean_corr_perturbed_incorr": 19,
+            "clean_incorr_perturbed_corr": 2,
+            "clean_incorr_perturbed_incorr": 2
+        },
+        "Sycophancy": {
+            "clean_accuracy": 0.92,
+            "perturbed_accuracy": 0.95,
+            "clean_corr_perturbed_corr": 91,
+            "clean_corr_perturbed_incorr": 1,
+            "clean_incorr_perturbed_corr": 4,
+            "clean_incorr_perturbed_incorr": 4
+        },
+        "UnitConvFinal": {
+            "clean_accuracy": 0.91,
+            "perturbed_accuracy": 0.9,
+            "clean_corr_perturbed_corr": 87,
+            "clean_corr_perturbed_incorr": 4,
+            "clean_incorr_perturbed_corr": 3,
+            "clean_incorr_perturbed_incorr": 6
+        }
+    },
+    "mistralai_mistral_large_2512": {
+        "ExtraSteps": {
+            "clean_accuracy": 0.79,
+            "perturbed_accuracy": 0.69,
+            "clean_corr_perturbed_corr": 59,
+            "clean_corr_perturbed_incorr": 20,
+            "clean_incorr_perturbed_corr": 10,
+            "clean_incorr_perturbed_incorr": 11
+        },
+        "MathError": {
+            "clean_accuracy": 0.81,
+            "perturbed_accuracy": 0.78,
+            "clean_corr_perturbed_corr": 65,
+            "clean_corr_perturbed_incorr": 16,
+            "clean_incorr_perturbed_corr": 13,
+            "clean_incorr_perturbed_incorr": 6
+        },
+        "SkippedSteps": {
+            "clean_accuracy": 0.82,
+            "perturbed_accuracy": 0.8,
+            "clean_corr_perturbed_corr": 73,
+            "clean_corr_perturbed_incorr": 9,
+            "clean_incorr_perturbed_corr": 7,
+            "clean_incorr_perturbed_incorr": 11
+        },
+        "Sycophancy": {
+            "clean_accuracy": 0.84,
+            "perturbed_accuracy": 0.83,
+            "clean_corr_perturbed_corr": 71,
+            "clean_corr_perturbed_incorr": 13,
+            "clean_incorr_perturbed_corr": 12,
+            "clean_incorr_perturbed_incorr": 4
+        },
+        "UnitConvFinal": {
+            "clean_accuracy": 0.78,
+            "perturbed_accuracy": 0.82,
+            "clean_corr_perturbed_corr": 71,
+            "clean_corr_perturbed_incorr": 7,
+            "clean_incorr_perturbed_corr": 11,
+            "clean_incorr_perturbed_incorr": 11
+        }
+    },
+    "openai_gpt_4o_mini": {
+        "ExtraSteps": {
+            "clean_accuracy": 0.94,
+            "perturbed_accuracy": 0.98,
+            "clean_corr_perturbed_corr": 94,
+            "clean_corr_perturbed_incorr": 0,
+            "clean_incorr_perturbed_corr": 4,
+            "clean_incorr_perturbed_incorr": 2
+        },
+        "MathError": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.94,
+            "clean_corr_perturbed_corr": 94,
+            "clean_corr_perturbed_incorr": 4,
+            "clean_incorr_perturbed_corr": 0,
+            "clean_incorr_perturbed_incorr": 2
+        },
+        "SkippedSteps": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.97,
+            "clean_corr_perturbed_corr": 96,
+            "clean_corr_perturbed_incorr": 2,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 1
+        },
+        "Sycophancy": {
+            "clean_accuracy": 0.96,
+            "perturbed_accuracy": 0.96,
+            "clean_corr_perturbed_corr": 95,
+            "clean_corr_perturbed_incorr": 1,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 3
+        },
+        "UnitConvFinal": {
+            "clean_accuracy": 0.95,
+            "perturbed_accuracy": 0.84,
+            "clean_corr_perturbed_corr": 82,
+            "clean_corr_perturbed_incorr": 13,
+            "clean_incorr_perturbed_corr": 2,
+            "clean_incorr_perturbed_incorr": 3
+        }
+    },
+    "openai_gpt_5_2": {
+        "ExtraSteps": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.99,
+            "clean_corr_perturbed_corr": 98,
+            "clean_corr_perturbed_incorr": 0,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 1
+        },
+        "MathError": {
+            "clean_accuracy": 0.99,
+            "perturbed_accuracy": 0.98,
+            "clean_corr_perturbed_corr": 98,
+            "clean_corr_perturbed_incorr": 1,
+            "clean_incorr_perturbed_corr": 0,
+            "clean_incorr_perturbed_incorr": 1
+        },
+        "SkippedSteps": {
+            "clean_accuracy": 0.99,
+            "perturbed_accuracy": 0.98,
+            "clean_corr_perturbed_corr": 98,
+            "clean_corr_perturbed_incorr": 1,
+            "clean_incorr_perturbed_corr": 0,
+            "clean_incorr_perturbed_incorr": 1
+        },
+        "Sycophancy": {
+            "clean_accuracy": 0.99,
+            "perturbed_accuracy": 0.97,
+            "clean_corr_perturbed_corr": 97,
+            "clean_corr_perturbed_incorr": 2,
+            "clean_incorr_perturbed_corr": 0,
+            "clean_incorr_perturbed_incorr": 1
+        },
+        "UnitConvFinal": {
+            "clean_accuracy": 0.97,
+            "perturbed_accuracy": 0.95,
+            "clean_corr_perturbed_corr": 94,
+            "clean_corr_perturbed_incorr": 3,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 2
+        }
+    },
+    "qwen_qwen3_235b_a22b_2507": {
+        "ExtraSteps": {
+            "clean_accuracy": 0.99,
+            "perturbed_accuracy": 0.98,
+            "clean_corr_perturbed_corr": 98,
+            "clean_corr_perturbed_incorr": 1,
+            "clean_incorr_perturbed_corr": 0,
+            "clean_incorr_perturbed_incorr": 1
+        },
+        "MathError": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.96,
+            "clean_corr_perturbed_corr": 96,
+            "clean_corr_perturbed_incorr": 2,
+            "clean_incorr_perturbed_corr": 0,
+            "clean_incorr_perturbed_incorr": 2
+        },
+        "SkippedSteps": {
+            "clean_accuracy": 0.97,
+            "perturbed_accuracy": 0.98,
+            "clean_corr_perturbed_corr": 97,
+            "clean_corr_perturbed_incorr": 0,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 2
+        },
+        "Sycophancy": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.98,
+            "clean_corr_perturbed_corr": 98,
+            "clean_corr_perturbed_incorr": 0,
+            "clean_incorr_perturbed_corr": 0,
+            "clean_incorr_perturbed_incorr": 2
+        },
+        "UnitConvFinal": {
+            "clean_accuracy": 0.98,
+            "perturbed_accuracy": 0.97,
+            "clean_corr_perturbed_corr": 96,
+            "clean_corr_perturbed_incorr": 2,
+            "clean_incorr_perturbed_corr": 1,
+            "clean_incorr_perturbed_incorr": 1
+        }
+    }
+}

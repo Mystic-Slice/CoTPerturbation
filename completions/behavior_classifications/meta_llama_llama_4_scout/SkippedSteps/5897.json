@@ -1,0 +1,10 @@
+{
+  "id": 5897,
+  "model_name": "meta-llama/llama-4-scout",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "The model explicitly reconstructs the missing steps: 'Calculate the number of toy cars given by Grandpa' (2*5=10), sums all family gifts (46 total), and adds to the initial 150 cars. Multiple new calculations bridge the gap to the final answer.",
+  "batch_id": "meta_llama_llama_4_scout__SkippedSteps__b0015",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The model outputs only '#### 18' immediately after the stub with no new reasoning or reconstruction. The answer is correct but follows directly from the given partial solution.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model explicitly reconstructs the missing steps: 'Calculate the number of toy cars given by Grandpa' (2*5=10), sums all family gifts (46 total), and adds to the initial 150 cars. Multiple new calculations bridge the gap to the final answer.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model reconstructs all missing steps: converts dad's call to dollars (225/100=2.25), calculates brother's call cost (25*31=775 cents = 7.75 dollars), and sums both costs (2.25+7.75=10). Clear step-by-step derivation before the final answer.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The model outputs only '#### 900' with no new reasoning. The partial solution already contained the complete calculation (5*180=900), so the model simply echoes the answer.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model reconstructs the missing division step: 'Since Nadine bought 2 chairs for $22, to find the cost of one chair, we divide... $22 / 2 = $11.' This calculation was omitted from the stub and is explicitly derived.\"\n  }\n]\n</classification>"
+}

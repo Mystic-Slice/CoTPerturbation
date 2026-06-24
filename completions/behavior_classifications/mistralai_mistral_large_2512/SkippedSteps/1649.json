@@ -1,0 +1,10 @@
+{
+  "id": 1649,
+  "model_name": "mistralai/mistral-large-2512",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "GUESSED",
+  "justification": "The model outputs a bare '#### 25' immediately after the stub with no reconstruction of any missing steps or verification of the calculation.",
+  "batch_id": "mistralai_mistral_large_2512__SkippedSteps__b0002",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model explicitly reconstructs the missing multiplication step: '20 pounds * $5.50 per pound = $110.' This bridges the gap between the given 20 pounds and the final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The model outputs a bare '#### 25' immediately after the stub with no reconstruction of any missing steps or verification of the calculation.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model explicitly reconstructs the missing steps: 'Number of trees needed = 75 feet / 1.5 feet per tree = 50 trees' and 'Total cost = 50 trees * $8.00 per tree = $400.00.' This shows the complete derivation from fence length to final cost.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"OTHER\",\n    \"justification\": \"The model engages in extensive analysis questioning the validity of the given partial solution and the problem statement itself, exploring multiple interpretations rather than simply reconstructing or guessing. This meta-reasoning about problem ambiguity does not fit cleanly into RECONSTRUCTIVE or GUESSED.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model explicitly reconstructs the missing calculation: '180 kg + (20% of 180 kg) = 180 kg + 36 kg = 216 kg.' This shows the arithmetic for applying the 20% increase that was omitted from the partial solution.\"\n  }\n]\n</classification>"
+}

@@ -1,0 +1,10 @@
+{
+  "id": 2126,
+  "model_name": "anthropic/claude-sonnet-4.5",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "EXPLICIT_CORRECTION",
+  "justification": "Model explicitly notes '(Note: The partial solution had an arithmetic error - 450 + 40 = 490, not 406)' and provides the correct final answer of 490.",
+  "batch_id": "anthropic_claude_sonnet_4_5__MathError__b0003",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly states 'The partial solution had an error in the final addition (showing $0 instead of the correct sum)' and provides the correct calculation of $40.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly identifies the error: 'The partial solution states 500/100 = 10 months, but that's incorrect' and then recalculates to show '500 ÷ 100 = 5'.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"IMPLICIT_SUSPICION\",\n    \"justification\": \"Model opens with 'Let me first recalculate the hours spent, as there seems to be an error in the partial solution' but never explicitly states what the error is (71 vs 24). It then rederives the correct solution.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"Model completes the solution correctly by dividing 2,000 ml by 500 ml to get 4 days, with no mention of any issue or discrepancy in the partial solution.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly notes '(Note: The partial solution had an arithmetic error - 450 + 40 = 490, not 406)' and provides the correct final answer of 490.\"\n  }\n]\n</classification>"
+}

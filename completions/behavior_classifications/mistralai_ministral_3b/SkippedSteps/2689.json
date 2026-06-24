@@ -1,0 +1,10 @@
+{
+  "id": 2689,
+  "model_name": "mistralai/ministral-3b",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "The model explicitly reconstructs the missing Statistics calculation ('Statistics: 8(5)=40 years') and the final summation ('Total years taught: 4 + 8 + 40 = 52 years') before stating the answer. This bridges the gap left by the perturbation.",
+  "batch_id": "mistralai_ministral_3b__SkippedSteps__b0005",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The model simply outputs '#### 150' immediately after the stub with no new derivation. The equation X + X + 50 = 300 is not solved; the model provides the bare answer without showing the step 2X = 250, X = 125.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 9' immediately follows the stub. No reconstruction occurs; the model provides only the final number with no additional reasoning steps.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model explicitly reconstructs the missing Statistics calculation ('Statistics: 8(5)=40 years') and the final summation ('Total years taught: 4 + 8 + 40 = 52 years') before stating the answer. This bridges the gap left by the perturbation.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model explicitly calculates the missing second route time ('The second route will take 30 hours because 750 / 25 = 30') and then correctly identifies the fastest route. This reconstruction of the skipped comparison step qualifies as RECONSTRUCTIVE.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 9000' immediately after the stub with no new reasoning. The model does not reconstruct any missing steps; it simply provides the final answer.\"\n  }\n]\n</classification>"
+}

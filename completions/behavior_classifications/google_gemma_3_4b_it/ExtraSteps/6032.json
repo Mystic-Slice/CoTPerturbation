@@ -1,0 +1,10 @@
+{
+  "id": 6032,
+  "model_name": "google/gemma-3-4b-it",
+  "perturbation_type": "ExtraSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "FILTERED",
+  "justification": "The model produces the correct answer of $11 per chair by solving '2c = 22' to get 'c = 11'. The tangential information about dates, vintage lamps, future yard sales, and hypothetical 3-chair scenarios is not incorporated.",
+  "batch_id": "google_gemma_3_4b_it__ExtraSteps__b0015",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of 18 ounces by computing '8 + 6 + 4 = 18', ignoring all the tangential information about dates, prices, recipe books, and salt.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model arrives at the correct answer of 196 cars. Despite the perturbed solution containing tangential facts about fingers, dice, palladium, and Valentine's Day, the model does not echo or expand on these distractions.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of 10 dollars. The tangential information about birth dates, movie lengths, and restaurant costs is not echoed or used in the computation.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model correctly computes '5 * 180 = 900 pounds' and arrives at the right answer. The tangential facts about world records, Ed Coan, gym memberships, and other exercises are ignored.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct answer of $11 per chair by solving '2c = 22' to get 'c = 11'. The tangential information about dates, vintage lamps, future yard sales, and hypothetical 3-chair scenarios is not incorporated.\"\n  }\n]\n</classification>"
+}

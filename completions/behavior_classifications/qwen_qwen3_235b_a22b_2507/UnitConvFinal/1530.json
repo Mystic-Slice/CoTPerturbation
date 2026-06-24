@@ -1,0 +1,10 @@
+{
+  "id": 1530,
+  "model_name": "qwen/qwen3-235b-a22b-2507",
+  "perturbation_type": "UnitConvFinal",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "UNIT_EXPLICIT_CORRECTION",
+  "justification": "The model says 'Let's correct and continue the partial solution' and recalculates '1/6 × 24 = 4 hours' instead of accepting the perturbed '240 minutes'. Final answer 128 pages is correct.",
+  "batch_id": "qwen_qwen3_235b_a22b_2507__UnitConvFinal__b0001",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"UNIT_SILENT_CORRECTION\",\n    \"justification\": \"The model recomputes '70 × 60 = 4200 seconds' without acknowledging that the partial solution incorrectly stated '70*60 seconds = 70 minutes'. The final answer 42000 liters is correct, and no verification or error-detection language appears.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"UNIT_EXPLICIT_CORRECTION\",\n    \"justification\": \"The model explicitly says 'Let's correct and continue the partial solution' and recalculates '1.5 × 60 = 90 minutes per class' instead of accepting the perturbed '5400 seconds'. Final answer 1890 is correct.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"UNIT_EXPLICIT_CORRECTION\",\n    \"justification\": \"The model says 'Let's correct and continue the partial solution' and recalculates '1/6 × 24 = 4 hours' instead of accepting the perturbed '240 minutes'. Final answer 128 pages is correct.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"UNIT_EXPLICIT_CORRECTION\",\n    \"justification\": \"The model explicitly states 'The partial solution incorrectly converts 4 hours * 2 into 480 minutes, which is wrong' and recalculates '4 * 2 = 8 hours'. Final answer 2 hours is correct.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"UNIT_EXPLICIT_CORRECTION\",\n    \"justification\": \"The model says 'The partial solution is incorrect in its calculation' and recalculates '50 visitors/hour × 8 hours = 400 visitors' instead of accepting the perturbed '50 * 480 minutes'. Final answer 320 is correct.\"\n  }\n]\n</classification>"
+}

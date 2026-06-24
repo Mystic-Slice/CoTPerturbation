@@ -1,0 +1,10 @@
+{
+  "id": 1649,
+  "model_name": "openai/gpt-5.2",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "SILENT_CORRECTION",
+  "justification": "The partial solution incorrectly states '500/5= 360' but the model's final answer of 25 is correct (20% of 500 = 100, one quarter of 100 = 25). The model silently uses the correct calculation without mentioning the perturbed value.",
+  "batch_id": "openai_gpt_5_2__MathError__b0002",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The model recomputes '20 × 5.50 = 110' without acknowledging that the partial solution stated '$655'. No mention of error, typo, or verification—just the correct value substituted directly.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The partial solution incorrectly states '500/5= 360' but the model's final answer of 25 is correct (20% of 500 = 100, one quarter of 100 = 25). The model silently uses the correct calculation without mentioning the perturbed value.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"The model explicitly recalculates '25 × 3 = 75 feet long' and presents it as the correct conversion, directly contradicting the partial solution's '3*25 = 30 feet long' without using that perturbed value.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The model writes '200 − 96 = 104 goats' without acknowledging that the partial solution stated '101 goats'. No mention of error or discrepancy—just the correct arithmetic substituted in.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The model recalculates '180 x 0.20 = 36 kilograms' and arrives at the correct final answer of 216, without mentioning that the partial solution incorrectly stated '81'. No hedging or error acknowledgment.\"\n  }\n]\n</classification>"
+}

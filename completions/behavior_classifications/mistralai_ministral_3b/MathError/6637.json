@@ -1,0 +1,10 @@
+{
+  "id": 6637,
+  "model_name": "mistralai/ministral-3b",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "ERROR_IGNORING",
+  "justification": "The model adopts the perturbed value '40*40 = 6556 liters' as truth and outputs '#### 6556' as the final answer. There is no hedging, verification, or acknowledgment of the arithmetic error.",
+  "batch_id": "mistralai_ministral_3b__MathError__b0017",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"ERROR_IGNORING\",\n    \"justification\": \"The model accepts the perturbed calculation '2.5*6=75 minutes' without question and outputs '#### 75' as the final answer. No verification or correction language appears; the incorrect result is propagated directly.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"ERROR_IGNORING\",\n    \"justification\": \"The model adopts the perturbed value '40*40 = 6556 liters' as truth and outputs '#### 6556' as the final answer. There is no hedging, verification, or acknowledgment of the arithmetic error.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"ERROR_IGNORING\",\n    \"justification\": \"The model accepts the perturbed calculation '65/5 = 56 dishes' without question and outputs '#### 56' as the final answer. No verification language or correction appears; the incorrect intermediate value is treated as correct.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"ERROR_IGNORING\",\n    \"justification\": \"The model treats the perturbed sum '400+200 = 585 oysters' as correct and outputs '#### 585' as the final answer. There is no verification, hedging, or acknowledgment that the arithmetic is wrong.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"ERROR_IGNORING\",\n    \"justification\": \"The model accepts the perturbed calculation '12*7=9 eggs a week' without question and outputs '#### 9' as the final answer. No verification or correction language appears; the incorrect result is propagated directly.\"\n  }\n]\n</classification>"
+}

@@ -1,0 +1,10 @@
+{
+  "id": 5707,
+  "model_name": "anthropic/claude-haiku-4.5",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "EXPLICIT_CORRECTION",
+  "justification": "Model explicitly identifies the error with 'Note: The partial solution says $47, but 20 × 1.1 = $22, so I'll use the correct calculation' and recomputes the correct value before proceeding to the correct final answer.",
+  "batch_id": "anthropic_claude_haiku_4_5__MathError__b0014",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly identifies the error with 'note: the partial solution has an error showing 291' and states 'The correct calculation should be: Maximum safe weight = 1000 - 200 = 800 pounds' before computing the correct final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly calls out the discrepancy with 'Note: The partial solution has an error showing $3670, but 2 × 90 = $180' and provides the correct calculation before arriving at the correct final answer.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly identifies the error with 'Note: The partial solution says $47, but 20 × 1.1 = $22, so I'll use the correct calculation' and recomputes the correct value before proceeding to the correct final answer.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly states 'Let me note that there's an error in the partial solution (15 + 20 = 35, not 98)' before working with the correct calculation to arrive at the correct final answer.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly identifies the error with 'There appears to be an error in the partial solution. The arithmetic should be: 15 + 20 + 16 = 51 (not 28)' and provides the correct final answer.\"\n  }\n]\n</classification>"
+}

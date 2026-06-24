@@ -1,0 +1,10 @@
+{
+  "id": 1025,
+  "model_name": "google/gemma-3-4b-it",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model reconstructs the missing subtraction step '800 - 160 = 640' that calculates the number of parents who disagree. The final answer is correct.",
+  "batch_id": "google_gemma_3_4b_it__SkippedSteps__b0000",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps: 'Carmen needs $7 more to have twice the amount of money that Jethro has, so Carmen has $40 + $7 = $47' and then calculates the sum '$47 + $20 + $60 = $127'. The final answer is correct.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing multiplication step '12 * 3 = 36' that bridges from 12 tubes to the number of people (each tube serves 3 people). The final answer is correct.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the solution from scratch with 'Let Rachel's age be $r$ and Leah's age be $l$' and derives the full algebraic solution, finding '$l = 15$' and '$r = 19$'. The model even critiques the partial solution as incorrect.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing subtraction step '800 - 160 = 640' that calculates the number of parents who disagree. The final answer is correct.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps: 'she used 8 * (1/2) = 4 teaspoons of vanilla' and 'she used 4 * 2 = 8 eggs', showing the intermediate calculations needed to reach the final answer.\"\n  }\n]\n</classification>"
+}

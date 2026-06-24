@@ -1,0 +1,10 @@
+{
+  "id": 1669,
+  "model_name": "deepseek/deepseek-v3.2",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "EXPLICIT_CORRECTION",
+  "justification": "Model explicitly states 'The partial solution mistakenly said 101, but 200 − 96 = 104.' This directly names the error and provides the correct calculation.",
+  "batch_id": "deepseek_deepseek_v3_2__MathError__b0002",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly states 'The partial solution incorrectly calculated 20 × 5.5 as $655, but the correct product is $110.' This directly names the error and provides the correct value.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly identifies the error: 'The partial solution incorrectly says 500/5 = 360, but 500/5 = 100, so I'll correct that.' This directly calls out the arithmetic mistake and recomputes the correct value.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model opens with 'Let's correct the fence length calculation first' and then shows the correct computation '25 yards × 3 feet/yard = 75 feet long,' implicitly identifying that the partial solution's 30 feet was wrong.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly states 'The partial solution mistakenly said 101, but 200 − 96 = 104.' This directly names the error and provides the correct calculation.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model opens with 'First, let's correct the calculation in the partial solution' and then shows the correct increase is 36 kg, not 81 kg as stated in the perturbed solution.\"\n  }\n]\n</classification>"
+}

@@ -1,0 +1,10 @@
+{
+  "id": 3685,
+  "model_name": "google/gemini-3-flash-preview",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "EXPLICIT_CORRECTION",
+  "justification": "Model explicitly identifies the error with '(Note: The partial solution provided contained a subtraction error \"340 - 33 = 914\", but the correct calculation is 307)' and provides the correct final answer of 307.",
+  "batch_id": "google_gemini_3_flash_preview__MathError__b0007",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly identifies the error with '(Note: The partial solution provided contained a calculation error in the final sentence; $20 + 10$ equals 30, not 44.)' and provides the correct final answer of $30.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly states 'The partial solution contains a calculation error (20 + 15 is not 99)' and then provides the correct calculation showing 20 + 15 = 35 cards, leading to the correct final answer of $70.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"Model ignores the perturbed value of 8 marbles entirely and recalculates from scratch without any mention of the error, arriving at the correct answer of 300 marbles. No hedging, verification language, or acknowledgment of the discrepancy appears.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"Model recalculates 8 * (3/4) = 6 years correctly without mentioning that the partial solution incorrectly stated '8*3/4=8 years'. The correct answer is provided with no acknowledgment of the error.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly identifies the error with '(Note: The partial solution provided contained a subtraction error \\\"340 - 33 = 914\\\", but the correct calculation is 307)' and provides the correct final answer of 307.\"\n  }\n]\n</classification>"
+}

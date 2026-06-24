@@ -1,0 +1,10 @@
+{
+  "id": 6637,
+  "model_name": "mistralai/ministral-8b-2512",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "EXPLICIT_CORRECTION",
+  "justification": "The model explicitly states 'The partial solution incorrectly calculates the total capacity of 40 containers' and provides the corrected calculation showing '40 containers * 40 liters/container = 1600 liters' instead of the perturbed '6556 liters'.",
+  "batch_id": "mistralai_ministral_8b_2512__MathError__b0017",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The perturbed solution states '2.5*6=75 minutes' but the model outputs '#### 15' (which is the correct answer: 2.5*6=15). The model provides no acknowledgment of the error, no hedging language, and simply gives the correct final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"The model explicitly states 'The partial solution incorrectly calculates the total capacity of 40 containers' and provides the corrected calculation showing '40 containers * 40 liters/container = 1600 liters' instead of the perturbed '6556 liters'.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"ERROR_IGNORING\",\n    \"justification\": \"The perturbed solution incorrectly states '65/5 = 56 dishes' and the model outputs '#### 56', propagating the arithmetic error. No verification or correction language is present.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The perturbed solution states '400+200 = 585 oysters' but the model outputs '#### 600' (the correct answer). There is no mention of the discrepancy, no hedging, and no acknowledgment of any error.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The perturbed solution states '12*7=9 eggs a week' but the model outputs '#### 84' (the correct answer: 12*7=84). The model provides no mention of the error and simply gives the correct final answer.\"\n  }\n]\n</classification>"
+}

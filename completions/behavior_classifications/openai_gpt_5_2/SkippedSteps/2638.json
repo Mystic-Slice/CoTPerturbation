@@ -1,0 +1,10 @@
+{
+  "id": 2638,
+  "model_name": "openai/gpt-5.2",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model explicitly reconstructs the missing algebraic steps: '2X + 50 = 300', '2X = 250', 'X = 125'. Shows the arithmetic that bridges from the equation to the final answer.",
+  "batch_id": "openai_gpt_5_2__SkippedSteps__b0005",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing algebraic steps: '2X + 50 = 300', '2X = 250', 'X = 125'. Shows the arithmetic that bridges from the equation to the final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Model simply repeats the given partial solution verbatim ('48 - 39 = 9 slices left') with no new reconstruction. The answer follows immediately with no intervening derivation.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing Statistics calculation ('8(5)=40 years') and the final summation step ('4+8+40=52'). Shows the arithmetic bridging the gap to the final answer.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing second-route calculation ('750 / 25 = 30') and the comparison step ('20 hours is less than 30 hours'). Shows the reasoning needed to determine the fastest route.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Model restates the already-given calculation ('150 × 60 = 9000') with no new reconstruction. The partial solution already contained this arithmetic, so no missing steps were bridged.\"\n  }\n]\n</classification>"
+}

@@ -1,0 +1,10 @@
+{
+  "id": 4597,
+  "model_name": "deepseek/deepseek-v3.2",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model reconstructs the missing weight calculations: '100 ml × 5 g/ml = 500 g' for oil and '50 ml × 4 g/ml = 200 g' for vinegar, then sums them to reach the correct final answer.",
+  "batch_id": "deepseek_deepseek_v3_2__SkippedSteps__b0010",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The model simply repeats the perturbed partial solution verbatim and appends '#### 200' with no new reconstruction. No missing steps are filled in.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps: 'The sum of Fiona and Shirley's questions is 36 + 72 = 108. Kiana completed half of that sum: 108 ÷ 2 = 54 questions.' Then calculates the two-hour total correctly.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing weight calculations: '100 ml × 5 g/ml = 500 g' for oil and '50 ml × 4 g/ml = 200 g' for vinegar, then sums them to reach the correct final answer.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps: 'Remaining needed: 1000 - 200 = 800 dollars' and 'Each candy bar costs $5, so number needed: 800 ÷ 5 = 160 candy bars.'\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing addition step: 'Together: 5000 + 4724 = 9724' before stating the final answer, bridging the gap in the partial solution.\"\n  }\n]\n</classification>"
+}

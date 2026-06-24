@@ -1,0 +1,10 @@
+{
+  "id": 6750,
+  "model_name": "deepseek/deepseek-v3.2",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model explicitly reconstructs the missing steps: 'The total couscous from all shipments is 20 + 45 = 65 pounds' and 'the number of dishes is 65 ÷ 5 = 13.' These are new calculations bridging the gap to the final answer.",
+  "batch_id": "deepseek_deepseek_v3_2__SkippedSteps__b0017",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing step: 'Of these 60, 20% overinflated and exploded: 20% × 60 = 12 balls exploded' and then calculates 'Balls inflated successfully: 60 - 12 = 48 balls.' This shows the arithmetic bridging the gap to the final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Model simply restates the already-given calculation '2.5 × 6 = 15 minutes' without adding any new reasoning steps. The answer follows immediately with no reconstruction of missing work.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Model only restates the multiplication '40 × 40 = 1600' that was already shown in the partial solution. No new intermediate steps are reconstructed; it's essentially boilerplate confirmation.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps: 'The total couscous from all shipments is 20 + 45 = 65 pounds' and 'the number of dishes is 65 ÷ 5 = 13.' These are new calculations bridging the gap to the final answer.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing final step: 'Together, they eat 200 + 400 = 600 oysters.' This is the new arithmetic needed to complete the solution and reach the correct answer.\"\n  }\n]\n</classification>"
+}

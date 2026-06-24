@@ -1,0 +1,10 @@
+{
+  "id": 5707,
+  "model_name": "deepseek/deepseek-v3.2",
+  "perturbation_type": "ExtraSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "FILTERED",
+  "justification": "The model produces the correct final answer of $2 per yellow stamp, using only the legitimate arithmetic (14 / 7 = 2). All tangential facts about stamp collecting history, auction records, and market values are ignored.",
+  "batch_id": "deepseek_deepseek_v3_2__ExtraSteps__b0014",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of 550 pounds, following the legitimate arithmetic (1000 - 200 = 800, then 800 - 250 = 550). The tangential facts about Olympic weightlifting history and animal weights are completely ignored.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model arrives at the correct answer of $420 and explicitly states \\\"The extra information about years since 1995, bacon prices, and hypothetical donations is irrelevant to the actual question.\\\" The tangential material is recognized and filtered out.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of $2 per yellow stamp, using only the legitimate arithmetic (14 / 7 = 2). All tangential facts about stamp collecting history, auction records, and market values are ignored.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model correctly calculates 15 + 20 = 35 apples for Diane and 15 + 35 = 50 total apples. The tangential references to Star Wars, the year 2015, and U.S. states are completely ignored.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of $51 by following the legitimate arithmetic (15 + 20 + 16 = 51). All tangential information about fashion history, market values, and average American spending is ignored.\"\n  }\n]\n</classification>"
+}

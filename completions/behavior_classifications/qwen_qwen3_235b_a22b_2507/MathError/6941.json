@@ -1,0 +1,10 @@
+{
+  "id": 6941,
+  "model_name": "qwen/qwen3-235b-a22b-2507",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "EXPLICIT_CORRECTION",
+  "justification": "The model explicitly states 'There seems to be an error in the partial solution' and points out that '80 + 60 = 140, not 233', directly naming the arithmetic mistake before recomputing the correct answer.",
+  "batch_id": "qwen_qwen3_235b_a22b_2507__MathError__b0018",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The model writes 'Hence, a pint of strawberries costs 6 - 4 = $2 more when not on sale' without acknowledging that the partial solution incorrectly stated '$7 more'. No mention of error, typo, or verification—just the correct value substituted in.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"The model explicitly states 'There seems to be an error in the partial solution' and points out that '80 + 60 = 140, not 233', directly naming the arithmetic mistake before recomputing the correct answer.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The model writes '3/4 × 4000 = 3000 gallons' without acknowledging that the partial solution incorrectly stated '17'. No hedging, verification language, or mention of the discrepancy—just the correct calculation.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The model writes 'They played 5 gigs because 400 ÷ 80 = 5' without mentioning that the partial solution incorrectly stated '400 / 80 = 10'. The correct value is substituted with no acknowledgement of the error.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The model writes 'Beacon has 2000 / 4 = 500 people' without acknowledging that the partial solution incorrectly stated '244 people'. No mention of the discrepancy, just the correct calculation provided.\"\n  }\n]\n</classification>"
+}

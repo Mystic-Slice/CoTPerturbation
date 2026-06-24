@@ -1,0 +1,10 @@
+{
+  "id": 4404,
+  "model_name": "deepseek/deepseek-v3.2",
+  "perturbation_type": "ExtraSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "FILTERED",
+  "justification": "The model produces the correct final answer of 200, directly computing '300-100=$200' and ignoring all tangential material about 2020, the year 375 AD, lumber costs, and prosperity symbolism.",
+  "batch_id": "deepseek_deepseek_v3_2__ExtraSteps__b0010",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of 200, directly computing '300-100=$200' and ignoring all tangential material about 2020, the year 375 AD, lumber costs, and prosperity symbolism.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model outputs the correct final answer of 324. Despite the perturbed solution containing tangential facts about months in three years, the year 108 AD, and the 18th century, the model does not echo or engage with these distractions.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of 700 grams. All tangential comparisons about larger bowls, balsamic vinegar, grapefruits, apples, and salt are ignored in the completion.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model arrives at the correct answer of 160 candy bars, following the legitimate arithmetic ($1000 - $200 = $800, then $800 ÷ $5 = 160). The tangential facts about 2021 candy bar prices and hypothetical scenarios are not incorporated.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model correctly computes 9724 pennies as the final answer. Despite tangential material about the year 1976, future year 4724, and days in 27 years, the model sticks to the core arithmetic and ignores the noise.\"\n  }\n]\n</classification>"
+}

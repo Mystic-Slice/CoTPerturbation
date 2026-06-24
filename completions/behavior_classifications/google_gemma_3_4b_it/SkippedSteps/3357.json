@@ -1,0 +1,10 @@
+{
+  "id": 3357,
+  "model_name": "google/gemma-3-4b-it",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model explicitly reconstructs the missing division step: 'He puts 50 tennis balls into 5 containers. 50 / 5 = 10' before stating the final answer. This bridges the gap between keeping 50 balls and determining how many go in each container.",
+  "batch_id": "google_gemma_3_4b_it__SkippedSteps__b0007",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing division step: 'He puts 50 tennis balls into 5 containers. 50 / 5 = 10' before stating the final answer. This bridges the gap between keeping 50 balls and determining how many go in each container.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs all missing steps: calculates cupcakes (2/(1/5)=10), earnings from cakes (8*2.5=$20), earnings from cupcakes (10*1=$10), and total earnings ($20+$10=$30). Shows complete arithmetic bridging the gap from '8 cakes' to final answer.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing multiplication step '35 * 2 = 70' that bridges from the number of cards (35) to the total cost. Shows the arithmetic needed to reach the final answer.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing calculation for Savanna's marbles (3*30=90), total given away (60+120+90=270), and sets up equation x-270=30 to solve for initial amount (x=300). Explicitly shows all intermediate steps before final answer.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing multiplication step: 'the time it takes Tom to finish is (3/4) * 8 = 6 years.' Shows the arithmetic that bridges from '8 years' to the final answer of 6 years.\"\n  }\n]\n</classification>"
+}

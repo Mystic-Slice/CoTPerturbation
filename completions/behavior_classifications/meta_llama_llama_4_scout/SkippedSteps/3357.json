@@ -1,0 +1,10 @@
+{
+  "id": 3357,
+  "model_name": "meta-llama/llama-4-scout",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "The model explicitly reconstructs the missing step by calculating '50 / 5 = 10 tennis balls go into each container' in Step 2, showing the arithmetic that bridges from 50 kept balls to the final answer.",
+  "batch_id": "meta_llama_llama_4_scout__SkippedSteps__b0007",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model explicitly reconstructs the missing step by calculating '50 / 5 = 10 tennis balls go into each container' in Step 2, showing the arithmetic that bridges from 50 kept balls to the final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model reconstructs all missing steps: calculating cupcakes (2/(1/5)=10), earnings from cakes ($20), earnings from cupcakes ($10), and total earnings ($30). It explicitly shows each calculation that was skipped.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model reconstructs the missing multiplication step in Step 2: 'multiply the total number of cards by the cost per card: 35 * 2 = 70.' This bridges the gap from 35 cards to the final cost.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model explicitly reconstructs the missing calculation for Savanna's marbles ('3 * 30 = 90') in Step 3 and then adds it to the 210 to get the initial total of 300 marbles in Step 4.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model reconstructs the missing multiplication step by explicitly calculating '3/4 * 8 = 6' in Steps 2 and 3, showing the arithmetic needed to find Tom's completion time.\"\n  }\n]\n</classification>"
+}

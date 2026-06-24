@@ -1,0 +1,10 @@
+{
+  "id": 6888,
+  "model_name": "deepseek/deepseek-v3.2",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model explicitly reconstructs the missing step: 'Price per pint not on sale = \\( \\frac{324}{54} = 6 \\) dollars' and then calculates the difference '\\( 6 - 4 = 2 \\) dollars' before stating the final answer. This bridges the gap left by the stub.",
+  "batch_id": "deepseek_deepseek_v3_2__SkippedSteps__b0018",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing step: 'Price per pint not on sale = \\\\( \\\\frac{324}{54} = 6 \\\\) dollars' and then calculates the difference '\\\\( 6 - 4 = 2 \\\\) dollars' before stating the final answer. This bridges the gap left by the stub.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 60' immediately follows the stub with no new reasoning or reconstruction. The model simply outputs the final answer without deriving any missing steps.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing division step: 'Time = 3000 gallons ÷ 10 gallons/hour = 300 hours' before stating the final answer. This explicitly shows the arithmetic that was skipped in the partial solution.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing calculation: 'Number of gigs = \\\\( 400 \\\\div 80 = 5 \\\\)' which bridges the gap between the given $80 per gig and the final answer. The intermediate step is explicitly shown.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Model merely repeats the calculations already present in the partial solution ('Victoria has 3000 - 1000 = 2000 people. Beacon has 2000 / 4 = 500 people') without adding any new reasoning, then outputs the answer. No missing steps are reconstructed.\"\n  }\n]\n</classification>"
+}

@@ -1,0 +1,10 @@
+{
+  "id": 1034,
+  "model_name": "mistralai/ministral-8b-2512",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model explicitly reconstructs the missing steps: 'With 8 cups of cream cheese, she used 8/2 = 4 teaspoons of vanilla' and 'With 4 teaspoons of vanilla, she used 4 × 2 = 8 eggs.' Final answer is correct.",
+  "batch_id": "mistralai_ministral_8b_2512__SkippedSteps__b0000",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing step: 'Carmen currently has $40 - $7 = $33' and then sums all three amounts ($60 + $20 + $33 = $113). The final answer is correct.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 36' immediately after the stub with no reconstruction of the missing step (12 tubes × 3 people per tube). No new derivation shown.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the solution from scratch with 'Let's denote Leah's age as L' and derives the full equation '2L + 4 = 34', solving step-by-step to reach the correct answer 19.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 640' immediately after the stub with no reconstruction of the subtraction step (800 - 160). No intervening reasoning shown.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps: 'With 8 cups of cream cheese, she used 8/2 = 4 teaspoons of vanilla' and 'With 4 teaspoons of vanilla, she used 4 × 2 = 8 eggs.' Final answer is correct.\"\n  }\n]\n</classification>"
+}

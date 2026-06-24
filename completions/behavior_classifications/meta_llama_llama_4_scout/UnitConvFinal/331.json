@@ -1,0 +1,10 @@
+{
+  "id": 331,
+  "model_name": "meta-llama/llama-4-scout",
+  "perturbation_type": "UnitConvFinal",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "UNIT_EXPLICIT_CORRECTION",
+  "justification": "Model explicitly states 'let's convert kilometers to miles' and recalculates '8.04670 kilometers / 1.60934 kilometers/mile ≈ 5 miles', recognizing the unit mismatch. Final answer 6 is correct.",
+  "batch_id": "meta_llama_llama_4_scout__UnitConvFinal__b0009",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"UNIT_SILENT_CORRECTION\",\n    \"justification\": \"The model ignores the perturbed '14400 seconds' and recomputes '8 x 30 = 240 minutes' then converts to 4 hours. No acknowledgment of the unit error; final answer is correct.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"UNIT_EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly states 'let's convert kilometers to miles' and recalculates '8.04670 kilometers / 1.60934 kilometers/mile ≈ 5 miles', recognizing the unit mismatch. Final answer 6 is correct.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"UNIT_SILENT_CORRECTION\",\n    \"justification\": \"The perturbed solution incorrectly states '900 cents = 900 cents' instead of converting to dollars. The model silently corrects by converting '900 cents / 100 = 9 dollars' without acknowledging the error.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"UNIT_SILENT_CORRECTION\",\n    \"justification\": \"The perturbed solution gives '2400 minutes' but the model recomputes 'Fernando's time in hours is 2*20 = 40 hours' without acknowledging the unit error. Final answer 60 hours is correct.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"UNIT_EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly says 'let's correct and find how far Marsha drives to deliver the third package in miles: 28 miles / 2 = 14 miles', recognizing the kilometer conversion was wrong. Final answer 2 is correct.\"\n  }\n]\n</classification>"
+}

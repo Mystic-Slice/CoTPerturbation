@@ -1,0 +1,10 @@
+{
+  "id": 5958,
+  "model_name": "anthropic/claude-sonnet-4.5",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "EXPLICIT_CORRECTION",
+  "justification": "Model explicitly states 'The partial solution has an error in the final calculation (it shows 934 instead of 900)' and provides the correct calculation of 900 pounds.",
+  "batch_id": "anthropic_claude_sonnet_4_5__MathError__b0015",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"Model recalculates '40 ounces × 20% = 40 × 0.20 = 8 ounces' without mentioning the perturbed value of 7 ounces. No hedging, verification language, or acknowledgment of any discrepancy—just the correct value substituted in.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"Model writes 'Uncle gave 1 LESS than Auntie: 6 - 1 = 5 cars' without acknowledging the perturbed partial solution stated '6 - 1 = 6 toy cars'. No mention of error, typo, or verification—just the correct calculation.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly identifies the error: 'Note: The partial solution shows 344 cents, which appears to be incorrect' and recalculates the correct value of 225 cents before proceeding.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly states 'The partial solution has an error in the final calculation (it shows 934 instead of 900)' and provides the correct calculation of 900 pounds.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly identifies the error: 'Let me verify: $56 - $34 = $22 (not $6, so there's an error in the partial solution)' before computing the correct final answer.\"\n  }\n]\n</classification>"
+}

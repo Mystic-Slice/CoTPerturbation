@@ -1,0 +1,10 @@
+{
+  "id": 6888,
+  "model_name": "meta-llama/llama-4-scout",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "The model explicitly reconstructs the missing steps with \"Calculate the cost of a pint of strawberries when not on sale\" (324/54=$6) and \"Find the difference in cost\" (6-4=$2). It shows all intermediate arithmetic before reaching the correct final answer.",
+  "batch_id": "meta_llama_llama_4_scout__SkippedSteps__b0018",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model explicitly reconstructs the missing steps with \\\"Calculate the cost of a pint of strawberries when not on sale\\\" (324/54=$6) and \\\"Find the difference in cost\\\" (6-4=$2). It shows all intermediate arithmetic before reaching the correct final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The completion is a bare '#### 60' immediately following the stub with no new reasoning or reconstruction. The answer happens to be correct but no work is shown.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model reconstructs the missing step by explicitly calculating \\\"the time it takes to fill the tank to 3/4 of its capacity\\\" as \\\"3000 / 10 = 300 hours.\\\" It shows the division that bridges the gap between the given 3000 gallons and the final answer.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model explicitly reconstructs the missing division step: \\\"To find the number of gigs they've played, we need to divide the total amount they've earned ($400) by the amount they earn per gig ($80)\\\" and shows \\\"400 / 80 = 5.\\\"\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The completion is a bare '#### 500' with no reconstruction or new reasoning after the stub. The answer is correct but no work is shown.\"\n  }\n]\n</classification>"
+}

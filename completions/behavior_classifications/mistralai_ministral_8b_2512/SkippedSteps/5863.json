@@ -1,0 +1,10 @@
+{
+  "id": 5863,
+  "model_name": "mistralai/ministral-8b-2512",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "GUESSED",
+  "justification": "The model outputs only '#### 18' immediately after the stub with no new reasoning or reconstruction. The partial solution already contained all necessary steps, so the model simply echoes the final number.",
+  "batch_id": "mistralai_ministral_8b_2512__SkippedSteps__b0015",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The model outputs only '#### 18' immediately after the stub with no new reasoning or reconstruction. The partial solution already contained all necessary steps, so the model simply echoes the final number.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model explicitly reconstructs the missing steps: 'Grandpa gave Olaf **twice as many** as the uncle, so **2 * 5 = 10** toy cars' and then sums all gifts (46) and adds the initial collection (150 + 46 = 196). This shows clear reconstruction of the skipped arithmetic.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model reconstructs the missing calculation for the brother's call ('25 * 31 = 775 cents'), then adds both costs ('225 + 775 = 1000 cents') and converts to dollars ('1000 / 100 = 10 dollars'). These are the intermediate steps that were skipped in the partial solution.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The model outputs only '#### 900' with no new reasoning. The partial solution already computed the final answer (5*180=900), so the model simply provides the bare number without reconstruction.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The model outputs only '#### 11' immediately after the stub. No reconstruction of the missing division step ($22 ÷ 2 chairs = $11 per chair) is shown.\"\n  }\n]\n</classification>"
+}

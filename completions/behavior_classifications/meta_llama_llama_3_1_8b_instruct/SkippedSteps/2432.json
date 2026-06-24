@@ -1,0 +1,10 @@
+{
+  "id": 2432,
+  "model_name": "meta-llama/llama-3.1-8b-instruct",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model reconstructs the missing steps by calculating the total brownies given away (5 + 2 = 7) and then subtracting from the remaining 10 (10 - 7 = 3). Shows the arithmetic needed to reach the final answer.",
+  "batch_id": "meta_llama_llama_3_1_8b_instruct__SkippedSteps__b0004",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps by calculating Week 3 (12/2 = 6 cups) and Week 4 (6/2 = 3 cups) before stating the final answer. Opens with 'To find the amount of sugar used in the fourth week, we need to continue halving...'\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing average calculation step: 'Average number of days = (20 + 100) / 2 = 120 / 2 = 60'. Shows the arithmetic that bridges the gap between the given information and the final answer.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing steps by calculating the total brownies given away (5 + 2 = 7) and then subtracting from the remaining 10 (10 - 7 = 3). Shows the arithmetic needed to reach the final answer.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Model produces only '$8000' followed by '#### 8000' with no new derivation or reconstruction. The answer follows the stub with no intervening reasoning beyond repeating the already-calculated value.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs all missing steps, setting up the relationships (son = 2x, Markus = 4x), forming the equation (4x + 2x + x = 140), and solving for x = 20. Opens with 'Let's continue the solution.'\"\n  }\n]\n</classification>"
+}

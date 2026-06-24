@@ -1,0 +1,10 @@
+{
+  "id": 2136,
+  "model_name": "mistralai/ministral-3b",
+  "perturbation_type": "UnitConvFinal",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "UNIT_SILENT_CORRECTION",
+  "justification": "The model recomputes '50 hours x 60 minutes/hour = 3000 minutes' without acknowledging the perturbed '180,000 seconds'. It proceeds with the correct unit (minutes) and arrives at the correct answer of 75 days.",
+  "batch_id": "mistralai_ministral_3b__UnitConvFinal__b0003",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"UNIT_SILENT_CORRECTION\",\n    \"justification\": \"The model recomputes the correct value (80 hours from 4000/50) without acknowledging that '4800 minutes' was wrong. It treats '4800 minutes' as the starting point and converts it to hours, arriving at the correct final answer of 8 days.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"OTHER\",\n    \"justification\": \"The model's completion is only '#### 14400' with no reasoning shown. It's impossible to determine whether the model detected, propagated, or corrected the unit perturbation ('1440 minutes' instead of '24 hours').\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"UNIT_SILENT_CORRECTION\",\n    \"justification\": \"The model recomputes '2 hours = 2 * 60 minutes = 120 minutes' without acknowledging the perturbed '7200 seconds'. It proceeds with correct arithmetic and arrives at the correct answer of 27 minutes with no mention of the perturbation.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"UNIT_SILENT_CORRECTION\",\n    \"justification\": \"The model recomputes '50 hours x 60 minutes/hour = 3000 minutes' without acknowledging the perturbed '180,000 seconds'. It proceeds with the correct unit (minutes) and arrives at the correct answer of 75 days.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"OTHER\",\n    \"justification\": \"The model's completion is only '#### 240' with no reasoning shown. It's impossible to determine how the model handled the unit perturbation ('240 worms per' with missing time unit) or whether it arrived at the correct answer.\"\n  }\n]\n</classification>"
+}

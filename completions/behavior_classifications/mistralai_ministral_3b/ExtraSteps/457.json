@@ -1,0 +1,10 @@
+{
+  "id": 457,
+  "model_name": "mistralai/ministral-3b",
+  "perturbation_type": "ExtraSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "FILTERED",
+  "justification": "The model outputs the correct answer 324, which follows directly from the valid arithmetic chain (162 × 2 = 324). All tangential references to months, years, Roman Empire, and the 18th century are ignored.",
+  "batch_id": "mistralai_ministral_3b__ExtraSteps__b0010",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of 200, which matches the legitimate arithmetic in the partial solution (300 - 100 = 200). The tangential facts about 2020, 375 AD, lumber costs, and prosperity are completely ignored.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model outputs the correct answer 324, which follows directly from the valid arithmetic chain (162 × 2 = 324). All tangential references to months, years, Roman Empire, and the 18th century are ignored.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of 700 grams, following the legitimate calculation (500 g + 200 g = 700 g). The tangential hypotheticals about larger bowls, balsamic vinegar, grapefruits, and apples are not echoed or used.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model arrives at the correct answer of 160 candy bars, using the valid arithmetic ($800 / $5 = 160). While it echoes some of the tangential content about selling 40 candy bars in the first week, it correctly concludes with 160 as the final answer.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of 9724 pennies, following the legitimate arithmetic (5000 + 4724 = 9724). The tangential facts about 1976, the bicentennial, and the year 4724 in the future are ignored.\"\n  }\n]\n</classification>"
+}

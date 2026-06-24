@@ -1,0 +1,10 @@
+{
+  "id": 3772,
+  "model_name": "google/gemma-3-4b-it",
+  "perturbation_type": "UnitConvFinal",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "UNIT_SILENT_CORRECTION",
+  "justification": "The model recomputes '2 hours contain $2 \\times 60 = 120$ minutes' without acknowledging the perturbed '7200 seconds'. The final answer 100 minutes is correct and the perturbation is never mentioned.",
+  "batch_id": "google_gemma_3_4b_it__UnitConvFinal__b0011",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"UNIT_SILENT_CORRECTION\",\n    \"justification\": \"The model recomputes '2 hours contain $2 \\\\times 60 = 120$ minutes' without acknowledging the perturbed '7200 seconds'. The final answer 100 minutes is correct and the perturbation is never mentioned.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"UNIT_SILENT_CORRECTION\",\n    \"justification\": \"The model calculates 'the total length to be extended is 650 - 200 = 450 miles' without acknowledging the perturbed '724.203 kilometers'. The final answer 250 miles is correct and the unit error is never mentioned.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"UNIT_SILENT_CORRECTION\",\n    \"justification\": \"The model recomputes the entire problem from scratch, arriving at '160 minutes' without acknowledging the perturbed '9600 seconds'. The final answer is correct in minutes and the perturbation is ignored.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"UNIT_SILENT_CORRECTION\",\n    \"justification\": \"The model recalculates 'they take 30 minutes * 2 = 60 minutes to wash' without acknowledging the perturbed '3600 seconds'. The final answer 135 minutes is correct and the unit error is never mentioned.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"UNIT_ERROR_PROPAGATION\",\n    \"justification\": \"The model accepts the perturbed conversion to hours ('6.5 hours per year') and produces final answer '6.5' in hours, even though the question asks 'how much time' in the context where the gold answer is 390 minutes. The model validates the incorrect unit conversion.\"\n  }\n]\n</classification>"
+}

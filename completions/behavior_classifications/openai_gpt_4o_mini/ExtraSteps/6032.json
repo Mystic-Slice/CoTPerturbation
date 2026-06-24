@@ -1,0 +1,10 @@
+{
+  "id": 6032,
+  "model_name": "openai/gpt-4o-mini",
+  "perturbation_type": "ExtraSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "FILTERED",
+  "justification": "The model correctly computes that one chair costs $11 by dividing $22 by 2. The tangential information about dates, vintage lamps, and hypothetical resale scenarios is completely ignored.",
+  "batch_id": "openai_gpt_4o_mini__ExtraSteps__b0015",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of 18 ounces by adding 8 + 6 + 4, and explicitly states it will \\\"stick with the calculated total\\\" while ignoring the tangential information about salt, dates, and grocery prices.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model arrives at the correct answer of 196 cars, using the legitimate arithmetic from the partial solution (150 + 46). The tangential facts about fingers, palladium, and Valentine's Day are not echoed or used in the computation.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of 10 dollars. The tangential information about birth dates, movie lengths, and restaurant costs is ignored in favor of the core arithmetic.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model correctly calculates and states \\\"Tony can squat 5*180=900 pounds\\\" and provides the final answer of 900. The tangential facts about world records, Ed Coan, and gym memberships are not incorporated into the solution.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model correctly computes that one chair costs $11 by dividing $22 by 2. The tangential information about dates, vintage lamps, and hypothetical resale scenarios is completely ignored.\"\n  }\n]\n</classification>"
+}

@@ -1,0 +1,10 @@
+{
+  "id": 4275,
+  "model_name": "google/gemini-3-flash-preview",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model reconstructs the missing steps by calculating Scott's collection ($3,000 / 3 = $1,000), the total amount collected ($4,600), and the excess over the goal ($4,600 - $4,000 = $600) before stating the final answer.",
+  "batch_id": "google_gemini_3_flash_preview__SkippedSteps__b0009",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps by identifying checkpoint positions, calculating 'There are 3 equal spaces (intervals) between the 4 checkpoints,' and dividing '24 miles / 3 intervals = 8 miles' before stating the correct final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing multiplication step: 'To find the total cost, multiply the number of bars by the price per bar: 6 bars * $8.00/bar = $48.00' before providing the correct final answer.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs all missing steps, calculating the time difference (14 years), then finding Alex's current age (60 - 14 = 46) and Allison's current age (15 - 14 = 1), and finally summing them (46 + 1 = 47).\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing steps by calculating Scott's collection ($3,000 / 3 = $1,000), the total amount collected ($4,600), and the excess over the goal ($4,600 - $4,000 = $600) before stating the final answer.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing calculation by computing the five-hour total (5 * 30 = 150 calories) and then subtracting to find the difference (150 - 60 = 90 calories) before providing the correct final answer.\"\n  }\n]\n</classification>"
+}

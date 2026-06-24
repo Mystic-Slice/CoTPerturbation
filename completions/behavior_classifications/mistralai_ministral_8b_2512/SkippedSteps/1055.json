@@ -1,0 +1,10 @@
+{
+  "id": 1055,
+  "model_name": "mistralai/ministral-8b-2512",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "GUESSED",
+  "justification": "Bare '#### 3500000' immediately after the stub with no new reasoning or reconstruction. The partial solution already contained the complete calculation, so the model just outputs the final number.",
+  "batch_id": "mistralai_ministral_8b_2512__SkippedSteps__b0001",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps: 'Kim ate 1 candy bar every 4 weeks. Over 16 weeks, she ate: 16 weeks ÷ 4 weeks = 4 candy bars eaten' and then calculates '32 candy bars (total) - 4 candy bars (eaten) = 28 candy bars saved' before stating the final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 3500000' immediately after the stub with no new reasoning or reconstruction. The partial solution already contained the complete calculation, so the model just outputs the final number.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs all missing steps: 'the total cost for the two meals is: 25 * 2 = $50', 'The total tip percentage is 20% of the total cost: 0.20 * 50 = $10', and 'Billy wants to cover 80% of this total tip: 0.80 * 10 = $8' before the final answer.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 70' immediately after the stub with no reconstruction of the missing steps (calculating planks from parents, friends, and subtracting from total). No new derivation shown.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 8' immediately after the stub with no reconstruction. The missing step (multiplying 32 by 0.25) is not shown, just the final number.\"\n  }\n]\n</classification>"
+}

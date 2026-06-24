@@ -1,0 +1,10 @@
+{
+  "id": 2540,
+  "model_name": "anthropic/claude-haiku-4.5",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "EXPLICIT_CORRECTION",
+  "justification": "Model explicitly notes 'I notice the partial solution has a calculation error at the end. It correctly calculates $12000 - $4000 but then states $8601, which is incorrect' and provides the correct value of $8000.",
+  "batch_id": "anthropic_claude_haiku_4_5__MathError__b0004",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly identifies the error: 'Note: The partial solution says 9 cups, but this appears to be an error. If we're halving each week, it should be 12/2 = 6'. It then recomputes the correct value and produces the correct final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly states 'The partial solution has an error' and corrects the calculation from '6 days' to '100 days', explaining 'So Serena takes 5 × 20 = 100 days (not 6 days as stated in the partial solution)'.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly identifies the arithmetic error: 'The partial solution states \\\"5-2=6 brownies\\\" which is incorrect mathematically (5-2=3, not 6)' and provides the correct calculation.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly notes 'I notice the partial solution has a calculation error at the end. It correctly calculates $12000 - $4000 but then states $8601, which is incorrect' and provides the correct value of $8000.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"Model explicitly identifies the error: 'The partial solution incorrectly stated \\\"Sarah has 250/2 = 607 cents\\\" which is wrong. 250/2 = 125, not 607' and provides the correct calculation.\"\n  }\n]\n</classification>"
+}

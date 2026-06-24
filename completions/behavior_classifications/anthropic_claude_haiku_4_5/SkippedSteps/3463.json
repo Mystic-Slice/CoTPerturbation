@@ -1,0 +1,10 @@
+{
+  "id": 3463,
+  "model_name": "anthropic/claude-haiku-4.5",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model reconstructs the missing multiplication step by explicitly showing 'Total cost = 35 cards × $2 per card = $70' before stating the final answer.",
+  "batch_id": "anthropic_claude_haiku_4_5__SkippedSteps__b0007",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly states 'Now I need to find how many tennis balls go in each container' and reconstructs the missing division step: 'Number of tennis balls per container = 50/5 = 10' before giving the final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs all missing steps with 'Continuing the solution' and shows the cupcake calculation (2 ÷ (1/5) = 10), then calculates earnings from both cakes ($20) and cupcakes ($10) before arriving at the correct total of $30.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing multiplication step by explicitly showing 'Total cost = 35 cards × $2 per card = $70' before stating the final answer.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly states 'I need to continue from the partial solution and account for the marbles given to Savanna' and reconstructs the missing calculation: 'Savanna received: 3 × 30 = 90 marbles' before summing all components to reach 300.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing step by explicitly calculating 'Time for Tom = 3/4 × 8 = 6 years' before stating the final answer.\"\n  }\n]\n</classification>"
+}

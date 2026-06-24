@@ -1,0 +1,10 @@
+{
+  "id": 1656,
+  "model_name": "qwen/qwen3-235b-a22b-2507",
+  "perturbation_type": "ExtraSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "FILTERED",
+  "justification": "The model produces 400, which is correct based on the legitimate calculation (50 trees × $8 = $400). The tangential facts about the fence being built in 1995, leap years, and gardening stress reduction are ignored.",
+  "batch_id": "qwen_qwen3_235b_a22b_2507__ExtraSteps__b0002",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of 110, which matches the legitimate arithmetic in the partial solution (20 pounds × $5.50 = $110). The tangential facts about Tuesday shopping, 2022 prices, and summer barbecues are ignored.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model outputs 25, which is the correct answer derived from the legitimate arithmetic (100 four-leaf clovers ÷ 4 = 25 purple ones). The tangential information about leap years, 1995 world population, and 1985 clover density is not echoed or used.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces 400, which is correct based on the legitimate calculation (50 trees × $8 = $400). The tangential facts about the fence being built in 1995, leap years, and gardening stress reduction are ignored.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model outputs 104, which is the correct answer from the legitimate arithmetic (200 - 96 = 104 goats). The tangential information about 2021 animal studies, 2019 global goat population, and 2020 goat meat prices is not incorporated.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces 216, which is correct based on the legitimate calculation (180 + 36 = 216 kilograms). The tangential facts about 52 weeks, small dog weight comparisons, and grape harvest seasons are ignored.\"\n  }\n]\n</classification>"
+}

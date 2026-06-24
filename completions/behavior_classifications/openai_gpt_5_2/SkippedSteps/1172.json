@@ -1,0 +1,10 @@
+{
+  "id": 1172,
+  "model_name": "openai/gpt-5.2",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model explicitly reconstructs the missing calculations: 'Colbert's parents provide half of the 200 planks: 200 / 2 = 100 planks', then sums all sources (50 + 100 + 20 = 170) and subtracts from 200 to get 30. The final answer is correct.",
+  "batch_id": "openai_gpt_5_2__SkippedSteps__b0001",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps: 'Kim eats 1 candy bar every 4 weeks, so in 16 weeks she eats 16 ÷ 4 = 4 candy bars' and 'She received 32 candy bars total, so she saved 32 - 4 = 28 candy bars.' The final answer is correct.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Model merely restates the already-computed values ('New York has 1400000 people and New England has 2100000 people. Their combined population is 1400000 + 2100000 = 3500000') without reconstructing any missing steps. This is boilerplate repetition, not new derivation.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing steps: 'Total cost for both meals is 2 × 25 = 50', 'A 20% tip on 50 is 0.20 × 50 = 10', and 'Billy covers 80% of that tip: 0.80 × 10 = 8.' The final answer is correct.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing calculations: 'Colbert's parents provide half of the 200 planks: 200 / 2 = 100 planks', then sums all sources (50 + 100 + 20 = 170) and subtracts from 200 to get 30. The final answer is correct.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the final missing step: 'Of the 32 students who own puppies, 25% also have parrots: 32 × 0.25 = 8.' The final answer is correct.\"\n  }\n]\n</classification>"
+}

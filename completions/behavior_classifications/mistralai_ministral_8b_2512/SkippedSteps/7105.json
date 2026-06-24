@@ -1,0 +1,10 @@
+{
+  "id": 7105,
+  "model_name": "mistralai/ministral-8b-2512",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "GUESSED",
+  "justification": "Bare '#### 500' immediately after the stub with no new reasoning. The partial solution already computed 500, so the model simply outputs it without reconstruction.",
+  "batch_id": "mistralai_ministral_8b_2512__SkippedSteps__b0018",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps by calculating '324 / 54 = $6' and then '6 - 4 = $2' before stating the final answer. These are the intermediate arithmetic steps needed to bridge from the partial solution to the correct answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 60' immediately after the stub with no new reasoning or reconstruction. The partial solution already computed 60, so the model simply outputs it without any additional work.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 300' immediately after the stub with no reconstruction of the missing division step (3000 ÷ 10 hours). No intermediate reasoning is shown.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 5' immediately after the stub with no reconstruction of the missing division step (400 ÷ 80). No new derivation is provided.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 500' immediately after the stub with no new reasoning. The partial solution already computed 500, so the model simply outputs it without reconstruction.\"\n  }\n]\n</classification>"
+}

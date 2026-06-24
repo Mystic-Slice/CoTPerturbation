@@ -1,0 +1,10 @@
+{
+  "id": 5507,
+  "model_name": "anthropic/claude-haiku-4.5",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model explicitly reconstructs the missing steps: 'Safe weight limit = 1000 - 200 = 800 pounds' and 'Weight that can be on the bar = 800 - 250 = 550 pounds'. Shows complete arithmetic bridging the gap from the partial solution to the final answer.",
+  "batch_id": "anthropic_claude_haiku_4_5__SkippedSteps__b0014",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps: 'Safe weight limit = 1000 - 200 = 800 pounds' and 'Weight that can be on the bar = 800 - 250 = 550 pounds'. Shows complete arithmetic bridging the gap from the partial solution to the final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing bacon calculation: 'Bacon: 90 slices × $2.00 = $180.00' and the final sum '$240.00 + $180.00 = $420.00'. Explicitly shows the arithmetic steps that were skipped.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs multiple missing steps: 'From red and blue stamps, Max earned: $22 + $64 = $86', then '$100 - $86 = $14', and finally 'Price per yellow stamp = $14 ÷ 7 = $2'. Shows complete derivation with verification.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The partial solution already contained the complete calculation (15 + 35 = 50), so the model only verifies with checkmarks '✓' rather than reconstructing missing steps. No new derivation was needed or provided.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing hat calculation: 'Four hats cost 4 * 4 = $16' and the final sum 'Total cost = $15 + $20 + $16 = $51'. Explicitly shows the arithmetic that bridges the gap.\"\n  }\n]\n</classification>"
+}

@@ -1,0 +1,10 @@
+{
+  "id": 1034,
+  "model_name": "deepseek/deepseek-v3.2",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model explicitly reconstructs two missing steps: calculating vanilla teaspoons '\\( 8 \\div 2 = 4 \\) teaspoons of vanilla' and then eggs '\\( 4 \\times 2 = 8 \\) eggs'. Shows complete derivation before the final answer.",
+  "batch_id": "deepseek_deepseek_v3_2__SkippedSteps__b0000",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps: 'Carmen needs $7 more to have $40: Carmen currently has \\\\( 40 - 7 = 33 \\\\) dollars' and then calculates the sum '\\\\( 20 + 33 + 60 = 113 \\\\)'. The final answer is correct.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing calculation: 'Each tube serves 3 people, so 12 tubes serve \\\\( 12 \\\\times 3 = 36 \\\\) people.' This bridges the gap between the given 12 tubes and the final answer.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps: 'If they had the same age, each would be \\\\( 30 \\\\div 2 = 15 \\\\) years old. Since Rachel is 4 years older, Rachel's age is \\\\( 15 + 4 = 19 \\\\).' Shows the arithmetic bridging the gap.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the final missing step: 'The number of parents who disagree is \\\\( 800 - 160 = 640 \\\\).' This calculation was needed to bridge from the 160 who agreed to the final answer.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs two missing steps: calculating vanilla teaspoons '\\\\( 8 \\\\div 2 = 4 \\\\) teaspoons of vanilla' and then eggs '\\\\( 4 \\\\times 2 = 8 \\\\) eggs'. Shows complete derivation before the final answer.\"\n  }\n]\n</classification>"
+}

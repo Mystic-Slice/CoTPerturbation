@@ -1,0 +1,10 @@
+{
+  "id": 6366,
+  "model_name": "mistralai/mistral-large-2512",
+  "perturbation_type": "MathError",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "IMPLICIT_SUSPICION",
+  "justification": "The model opens with 'Let's verify the calculations step-by-step to ensure accuracy', signaling suspicion, then re-derives all values from scratch. However, it never explicitly names the error (68 vs 54) in the partial solution.",
+  "batch_id": "mistralai_mistral_large_2512__MathError__b0016",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"The model explicitly states 'not 76, as the partial solution incorrectly states' and then recalculates the correct value of 35 squats for Day 2. This is a clear identification and correction of the planted error.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"ERROR_IGNORING\",\n    \"justification\": \"The model accepts the perturbed value '79 goals' for Kristin without question and uses it in all subsequent calculations (183 total, 45.75 average). No verification or correction language appears.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"EXPLICIT_CORRECTION\",\n    \"justification\": \"The model explicitly identifies the error with 'Note: The partial solution had a typo; the correct total is 90, not 57' and recalculates the correct answer. This is a clear correction with the word 'typo' used.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"IMPLICIT_SUSPICION\",\n    \"justification\": \"The model opens with 'Let's verify the calculations step-by-step to ensure accuracy', signaling suspicion, then re-derives all values from scratch. However, it never explicitly names the error (68 vs 54) in the partial solution.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"SILENT_CORRECTION\",\n    \"justification\": \"The model writes '40/100 * 100 = 40' (the correct value) without acknowledging that the partial solution stated '20'. No mention of any discrepancy, typo, or verification—just the correct calculation substituted in.\"\n  }\n]\n</classification>"
+}

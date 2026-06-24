@@ -1,0 +1,10 @@
+{
+  "id": 6973,
+  "model_name": "mistralai/ministral-3b",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "GUESSED",
+  "justification": "The model outputs '#### 3000' directly after the stub without reconstructing the missing step (dividing 3000 by 10 gallons/hour to get 300 hours). The answer is wrong (gold is 300).",
+  "batch_id": "mistralai_ministral_3b__SkippedSteps__b0018",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"The model explicitly reconstructs the missing division step '324 / 54 = 6' to find the non-sale price and then computes the difference. This shows the arithmetic bridging the gap between the given $324 and the final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The model outputs '#### 60' immediately after the stub with no new reasoning or reconstruction. The answer was already computed in the perturbed partial solution, so the model simply echoes it.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The model outputs '#### 3000' directly after the stub without reconstructing the missing step (dividing 3000 by 10 gallons/hour to get 300 hours). The answer is wrong (gold is 300).\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The model outputs '#### 5' immediately after the stub with no reconstruction of the missing division step (400 / 80 = 5). Although the answer is correct, no intermediate reasoning is shown.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"GUESSED\",\n    \"justification\": \"The model outputs '#### 500' directly after the stub without any new reasoning. The answer was already computed in the perturbed partial solution, so the model simply echoes it.\"\n  }\n]\n</classification>"
+}

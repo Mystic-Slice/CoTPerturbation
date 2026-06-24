@@ -1,0 +1,10 @@
+{
+  "id": 3592,
+  "model_name": "openai/gpt-5.2",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model explicitly reconstructs the missing multiplication step: 'Tom finishes in 3/4 of the normal 8 years, so 8 × 3/4 = 6 years.' This bridges the gap between knowing the total time and calculating Tom's actual time.",
+  "batch_id": "openai_gpt_5_2__SkippedSteps__b0007",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing division step: 'He puts the remaining 50 tennis balls into 5 containers, so each container gets 50/5 = 10 tennis balls.' This bridges the gap between the stub and the final answer.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs all missing steps: calculates cupcakes (2 ÷ 1/5 = 10), earnings from cakes (8 × 2.5 = 20), earnings from cupcakes (10 × 1 = 10), and the sum (20 + 10 = 30). Shows complete arithmetic bridging the gap.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing multiplication step: 'Each card costs $2, and he bought 35 cards, so he spent 35 × 2 = 70 dollars.' This completes the reasoning chain before the final answer.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing calculation for Savanna (3 × 30 = 90) and then explicitly sums all components: '30 + 60 + 120 + 90 = 300.' Shows the complete arithmetic needed to reach the final answer.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing multiplication step: 'Tom finishes in 3/4 of the normal 8 years, so 8 × 3/4 = 6 years.' This bridges the gap between knowing the total time and calculating Tom's actual time.\"\n  }\n]\n</classification>"
+}

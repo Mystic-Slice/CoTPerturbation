@@ -1,0 +1,10 @@
+{
+  "id": 3061,
+  "model_name": "meta-llama/llama-4-scout",
+  "perturbation_type": "UnitConvFinal",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "UNIT_ERROR_PROPAGATION",
+  "justification": "The model accepts '60000 cents' and converts it to '$600' by dividing by 100, propagating the perturbed value. The final answer of $150 is incorrect (gold answer is $150 but based on correct expenses of $600, not the perturbed cents conversion).",
+  "batch_id": "meta_llama_llama_4_scout__UnitConvFinal__b0007",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"UNIT_SILENT_CORRECTION\",\n    \"justification\": \"The model recalculates '6 hours * 5 days = 30 hours' and converts to '1800 minutes' without acknowledging the perturbation. The final answer of 50 hours is correct, and the perturbed unit is never questioned.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"UNIT_SILENT_CORRECTION\",\n    \"justification\": \"The model silently corrects '5100 cents' to '51 dollars' without acknowledging the unit error. The final answer of $226 is correct, and no verification or error-detection language appears.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"UNIT_SILENT_CORRECTION\",\n    \"justification\": \"The model recalculates '15 minutes/shampoo * 3 shampoos = 45 minutes' without acknowledging the '2700 seconds' perturbation. The final answer of 55 minutes is correct with no mention of the error.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"UNIT_ERROR_PROPAGATION\",\n    \"justification\": \"The model accepts '60000 cents' and converts it to '$600' by dividing by 100, propagating the perturbed value. The final answer of $150 is incorrect (gold answer is $150 but based on correct expenses of $600, not the perturbed cents conversion).\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"UNIT_SILENT_CORRECTION\",\n    \"justification\": \"The model states 'we first need to correct the partial solution' and recalculates '5 days * 400 hours/day = 2000 hours' without using the '120,000 minutes' perturbation. The final answer of $28,000 is correct.\"\n  }\n]\n</classification>"
+}

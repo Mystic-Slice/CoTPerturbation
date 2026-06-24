@@ -1,0 +1,10 @@
+{
+  "id": 169,
+  "model_name": "openai/gpt-4o-mini",
+  "perturbation_type": "ExtraSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "FILTERED",
+  "justification": "The model produces the correct final answer of 216 kilograms. While it echoes some tangential content (weeks, small dog comparison, harvest season), it correctly follows the arithmetic and arrives at the right answer.",
+  "batch_id": "openai_gpt_4o_mini__ExtraSteps__b0002",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of 110, stating \\\"He paid 20*5.5=$110 for the beef.\\\" The tangential facts about Tuesday shopping, 2022 prices, and barbecues are completely ignored.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model outputs the correct answer of 25 purple four-leaf clovers. The tangential information about leap years, 1995 world population, and 1985 clover density is not echoed or used in the final calculation.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model correctly calculates \\\"50 * 8 = 400\\\" and provides the right final answer of $400. All tangential facts about the fence being built in 1995, leap years, and stress reduction from gardening are ignored.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model arrives at the correct answer of 104 goats by following the legitimate arithmetic: \\\"200 total animals - 96 non-goats = 104 goats.\\\" The tangential information about 2021 studies, global goat populations, and 2020 meat prices is not incorporated.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of 216 kilograms. While it echoes some tangential content (weeks, small dog comparison, harvest season), it correctly follows the arithmetic and arrives at the right answer.\"\n  }\n]\n</classification>"
+}

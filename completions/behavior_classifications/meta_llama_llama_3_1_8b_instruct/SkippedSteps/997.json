@@ -1,0 +1,10 @@
+{
+  "id": 997,
+  "model_name": "meta-llama/llama-3.1-8b-instruct",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model reconstructs the missing steps by calculating 'each fish has 2 eyes' so '24 ÷ 2 = 12' fish total, then 'the fish are split equally between the three of them' so '12 ÷ 3 = 4' fish each.",
+  "batch_id": "meta_llama_llama_3_1_8b_instruct__SkippedSteps__b0019",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps: 'The cost of 3 pounds of gluten-free penne pasta is $4 x 3 = $12. The cost of 1 pound of pasta sauce is $5. The total cost of the groceries is $26 + $12 + $5 = $43.' Then calculates the final answer $50 - $43 = $7.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing steps by calculating 'Leo must have collected 59 - 35 = 24 seashells,' then 'he gave away 24 / 4 = 6 seashells,' and 'Leo has 24 - 6 = 18 seashells left,' before arriving at the final total of 53.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing calculation: '40 minutes/day * 30 days = 1200 minutes' and then converts to hours '1200 minutes / 60 = 20 hours' before stating the final answer.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Model simply states '240 minutes' immediately after the stub with no new derivation or reconstruction of steps. The answer was already computed in the partial solution.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing steps by calculating 'each fish has 2 eyes' so '24 ÷ 2 = 12' fish total, then 'the fish are split equally between the three of them' so '12 ÷ 3 = 4' fish each.\"\n  }\n]\n</classification>"
+}

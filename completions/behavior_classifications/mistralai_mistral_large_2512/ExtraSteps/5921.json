@@ -1,0 +1,10 @@
+{
+  "id": 5921,
+  "model_name": "mistralai/mistral-large-2512",
+  "perturbation_type": "ExtraSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "FILTERED",
+  "justification": "The model produces the correct final answer of 10 dollars. It does not reference any of the tangential information about birth dates, movie watching times, or restaurant meal costs that appeared in the perturbed solution.",
+  "batch_id": "mistralai_mistral_large_2512__ExtraSteps__b0015",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of 18 ounces by stating \\\"Total volume = 8 + 6 + 4 = 18 ounces.\\\" It ignores all tangential information about dates, prices, recipe books, and salt.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model outputs the correct final answer of 196 cars. Despite the perturbed solution containing tangential facts about fingers, dice, palladium, and Valentine's Day, the model does not echo or expand on these distractions.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of 10 dollars. It does not reference any of the tangential information about birth dates, movie watching times, or restaurant meal costs that appeared in the perturbed solution.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model outputs the correct final answer of 900 pounds. It ignores all tangential material about average gym weights, world records, Ed Coan, and gym membership costs.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"FILTERED\",\n    \"justification\": \"The model produces the correct final answer of $11 per chair, explicitly stating \\\"Let's focus on the relevant parts of the problem\\\" and calculating \\\"$22 / 2 = $11.\\\" It completely sidesteps the tangential information about dates, vintage lamps, and hypothetical scenarios.\"\n  }\n]\n</classification>"
+}

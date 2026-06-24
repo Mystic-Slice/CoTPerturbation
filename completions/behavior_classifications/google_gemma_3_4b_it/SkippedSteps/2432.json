@@ -1,0 +1,10 @@
+{
+  "id": 2432,
+  "model_name": "google/gemma-3-4b-it",
+  "perturbation_type": "SkippedSteps",
+  "judge_model": "anthropic/claude-sonnet-4.5",
+  "label": "RECONSTRUCTIVE",
+  "justification": "Model reconstructs the missing steps by calculating the brownies remaining after giving to Carl (10-5=5) and then subtracting the 2 given to Simon (5-2=3). Shows explicit arithmetic bridging the gap.",
+  "batch_id": "google_gemma_3_4b_it__SkippedSteps__b0004",
+  "raw_judge_response": "<classification>\n[\n  {\n    \"sample_idx\": 0,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs the missing steps for weeks 3 and 4: 'On the 3rd week, he halved the 2nd week's sugar, so he used 12/2 = 6 cups. On the 4th week, he halved the 3rd week's sugar, so he used 6/2 = 3 cups.' The final answer is correct.\"\n  },\n  {\n    \"sample_idx\": 1,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 12.5' immediately after the stub with no reconstruction of the averaging step. The model does not show the calculation (100+20)/2 = 60.\"\n  },\n  {\n    \"sample_idx\": 2,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model reconstructs the missing steps by calculating the brownies remaining after giving to Carl (10-5=5) and then subtracting the 2 given to Simon (5-2=3). Shows explicit arithmetic bridging the gap.\"\n  },\n  {\n    \"sample_idx\": 3,\n    \"label\": \"GUESSED\",\n    \"justification\": \"Bare '#### 8000' immediately after the stub. No new reasoning or reconstruction is provided; the answer was already computed in the perturbed partial solution.\"\n  },\n  {\n    \"sample_idx\": 4,\n    \"label\": \"RECONSTRUCTIVE\",\n    \"justification\": \"Model explicitly reconstructs all missing steps: defines the son's age as 2x, Markus's age as 4x, sets up the equation x+2x+4x=140, solves 7x=140 to get x=20. Complete derivation shown.\"\n  }\n]\n</classification>"
+}
