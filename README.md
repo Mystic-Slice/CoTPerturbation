@@ -22,9 +22,30 @@ This project investigates how different perturbation types affect LLM performanc
 │   │   ├── mistralai_*/
 │   │   ├── openai_*/
 │   │   └── qwen_*/
-│   └── result_plots/      # Visualization outputs
+│   ├── results_with_error_hint/   # Model outputs when given an error hint
+│   │   ├── anthropic_claude_*/
+│   │   ├── deepseek_*/
+│   │   ├── google_*/
+│   │   ├── meta_llama_*/
+│   │   ├── mistralai_*/
+│   │   ├── openai_*/
+│   │   └── qwen_*/
+│   ├── behavior_classifications/  # Behavior classifications per provider/model
+│   │   ├── anthropic_claude_*/
+│   │   ├── deepseek_*/
+│   │   ├── google_*/
+│   │   ├── meta_llama_*/
+│   │   ├── mistralai_*/
+│   │   ├── openai_*/
+│   │   └── qwen_*/
+│   ├── result_plots/      # Visualization outputs
+│   │   ├── accuracy_diff_histogram/
+│   │   └── accuracy_vs_model_size/
+│   └── result_plots_with_error_hint/  # Visualizations for error-hint runs
 │       ├── accuracy_diff_histogram/
-│       └── accuracy_vs_model_size/
+│       ├── accuracy_vs_model_size/
+│       ├── robustness_histogram/
+│       └── robustness_vs_model_size/
 └── PerturbedDataset_GSM8k/
     ├── gsm_8k/            # Original GSM8K dataset
     ├── ExtraSteps/perturbed/
