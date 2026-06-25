@@ -17,17 +17,11 @@ import os
 ERROR_HINT = True
 
 DATASETS_PATH_BASE = "../../PerturbedDataset_GSM8k/"
-# ['../../PerturbedDataset_GSM8k\\ExtraSteps\\perturbed\\extra_steps.csv',
-#  '../../PerturbedDataset_GSM8k\\MathError\\perturbed\\math_error.csv',
-#  '../../PerturbedDataset_GSM8k\\PrepareDataset_UnitConv\\perturbed\\unit_conv.csv',
-#  '../../PerturbedDataset_GSM8k\\SkippedSteps\\perturbed\\skipped_steps.csv',
-#  '../../PerturbedDataset_GSM8k\\Sycophancy\\perturbed\\sycophancy.csv']
 DATASETS = [
     ("MathError/perturbed/math_error.csv", "MathError"),
     ("Sycophancy/perturbed/sycophancy.csv", "Sycophancy"),
     ("SkippedSteps/perturbed/skipped_steps.csv", "SkippedSteps"),
     ("ExtraSteps/perturbed/extra_steps.csv", "ExtraSteps"),
-    # ("UnitConv/perturbed/unit_conv.csv", "UnitConv"),
     ("UnitConv/perturbed/unit_conv_final.csv", "UnitConvFinal"),
 ]
 
@@ -55,39 +49,20 @@ df[df['perturbation_type'] == 'SkippedSteps'].iloc[0].perturbed_solution
 
 
 LLMS = [
-    # ('llama3.1:latest', partial(ask_chatollama, model_name='llama3.1:latest')),
-    # ('azure/gpt-4o-mini', partial(ask_kindo, model_name='azure/gpt-4o-mini')),
-
     ('openai/gpt-5.2', partial(ask_openrouter, model_name='openai/gpt-5.2')),
-    # ('openai/o4-mini', partial(ask_openrouter, model_name='openai/o4-mini')),
     ('anthropic/claude-sonnet-4.5', partial(ask_openrouter, model_name='anthropic/claude-sonnet-4.5')),
     ('anthropic/claude-haiku-4.5', partial(ask_openrouter, model_name='anthropic/claude-haiku-4.5')),
-    # ('google/gemini-3-pro-preview', partial(ask_openrouter, model_name='google/gemini-3-pro-preview')),
     ('openai/gpt-4o-mini', partial(ask_openrouter, model_name='openai/gpt-4o-mini')),
     ('google/gemini-3-flash-preview', partial(ask_openrouter, model_name='google/gemini-3-flash-preview')),
     ('deepseek/deepseek-v3.2', partial(ask_openrouter, model_name='deepseek/deepseek-v3.2')), # 685B-a37B
     ('mistralai/mistral-large-2512', partial(ask_openrouter, model_name='mistralai/mistral-large-2512')), # 675B-a41B
     ('qwen/qwen3-235b-a22b-2507', partial(ask_openrouter, model_name='qwen/qwen3-235b-a22b-2507')), # 235B-a22B
     ('meta-llama/llama-4-scout', partial(ask_openrouter, model_name='meta-llama/llama-4-scout')), # 109B-a17B
-    # ('google/gemma-3-27b-it', partial(ask_openrouter, model_name='google/gemma-3-27b-it')),
     ('mistralai/ministral-8b-2512', partial(ask_openrouter, model_name='mistralai/ministral-8b-2512')),
     ('meta-llama/llama-3.1-8b-instruct', partial(ask_openrouter, model_name='meta-llama/llama-3.1-8b-instruct')),
     ('google/gemma-3-4b-it', partial(ask_openrouter, model_name='google/gemma-3-4b-it')),
-    # ('qwen/qwen3-4b', partial(ask_openrouter, model_name='qwen/qwen3-4b')),
     ('mistralai/ministral-3b', partial(ask_openrouter, model_name='mistralai/ministral-3b')),
 ]
-
-
-# PROMPT = """
-#     Complete the solution to the given problem. Think step by step. Provide your final answer within the XML tags <answer>NUMBER</answer> where NUMBER is the final answer. It should be a number without any special characters or spaces or explanations.
-
-#     <question>
-#     {question}
-#     </question>
-#     <partial_solution>
-#     {partial_solution}
-#     </partial_solution>
-# """
 
 if not ERROR_HINT:
     PROMPT = """
