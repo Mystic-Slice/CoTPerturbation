@@ -1,4 +1,5 @@
 # Fragile Thoughts: How Large Language Models Handle Chain-of-Thought Perturbations
+https://doi.org/10.5281/zenodo.21845395
 This repository contains code and data for evaluating Large Language Model (LLM) robustness through systematic perturbations on the GSM8K mathematical reasoning benchmark.
 
 ## Overview
